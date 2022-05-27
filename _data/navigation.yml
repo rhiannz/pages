@@ -2,7 +2,7 @@
 main:
 
   - title: "Resume"
-    url: /teaching/
+    url: /resume/
   
   - title: "Talks"
     url: /talks/    
