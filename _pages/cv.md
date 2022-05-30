@@ -19,7 +19,28 @@ Education
 
 ![profile](/images/profile.png) 
 
-<img src='/images/profile.png'>
+1
+
+<object data="https://github.com/rhiannz/rhiannz.github.io/_pdfs/Resume.pdf" width="1000" height="1000" type="application/pdf"></object>
+
+
+1.5
+
+<object data="{{ site.url }}{{ site.baseurl }}/_pdfs/Resume.pdf" width="1000" height="1000" type="application/pdf"></object>
+
+2
+
+<embed src='/images/Resume.pdf' width="500" height="375">
+
+
+3 
+
+<embed src="{{ site.url }}{{ site.baseurl }}/_pdfs/Resume.pdf" width="500" height="375">
+
+4
+
+<embed src="https://github.com/rhiannz/rhiannz.github.io/_pdfs/Resume.pdf" width="500" height="375">
+
 
 
 Work experience
