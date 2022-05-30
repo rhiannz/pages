@@ -17,8 +17,9 @@ Education
 
 
 
-![profile](../../images/profile.png) 
+![profile](/images/profile.png) 
 
+<img src='/images/profile.png'>
 
 
 Work experience
