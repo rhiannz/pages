@@ -1,5 +1,5 @@
 ---
-title: "Replication of "Piso Firme" Program Impact Investigation"
+title: 'Replication of "Piso Firme" Program Impact Investigation'
 excerpt: "<img src='/images/hhh_cover.png'><br/>Short description of portfolio item number 2"
 collection: portfolio
 ---
