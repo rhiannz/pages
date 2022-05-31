@@ -17,17 +17,17 @@ Education
 
 
 
-![profile](/images/profile.png) 
+![Resume](/images/Resume-1.png) 
 
 1
 
-<embed src='/images/Resume.pdf' width="500" height="630">
+<embed src='/images/Resume.pdf' width="500" height="620">
 
 
 
 2
 
-<embed src='/images/Resume.pdf' width="500" height="375">
+<embed src='/images/Resume.pdf' width="500" height="600">
 
 
 3 
