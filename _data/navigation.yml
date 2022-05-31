@@ -3,21 +3,21 @@ main:
   - title: "Resume"
     url: /cv/
   
-  - title: "Guide"
-    url: /markdown/
-  
-  - title: "Portfolio"
+  - title: "Projects"
     url: /portfolio/  
  
-  - title: "Publications"
+  - title: "Research Experience"
     url: /publications/    
-    
-  - title: "Talks"
-    url: /talks/   
   
-  - title: "Teaching"
+  - title: "Education"
     url: /teaching/
   
+  - title: "Talks"
+    url: /talks/   
+    
   - title: "Blog Posts"
     url: /year-archive/
     
+  - title: "Guide"
+    url: /markdown/
+  
