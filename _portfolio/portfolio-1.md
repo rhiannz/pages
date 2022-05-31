@@ -1,5 +1,5 @@
 ---
-title: "Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic"
+title: `"Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic"`
 excerpt: "<img src='/images/overdose_cover.png'><br/>Short description of portfolio item number 1"
 collection: portfolio
 ---
