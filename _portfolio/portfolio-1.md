@@ -1,5 +1,5 @@
 ---
-title: `"Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic"`
+title: <a href=https://rhiannz.github.io//portfolio/portfolio-1/ class="newanchor">"Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic"</a>
 excerpt: "<img src='/images/overdose_cover.png'><br/>Short description of portfolio item number 1"
 collection: portfolio
 ---
