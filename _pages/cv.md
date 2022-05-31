@@ -9,28 +9,24 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
-
 
 ![Resume](/images/Resume-1.png) 
 
 1
 
-<embed src='/images/Resume.pdf' width="500" height="620">
+<embed src='/images/Resume.pdf' width="500" height="590">
 
 
 
 2
 
-<embed src='/images/Resume.pdf' width="500" height="600">
+<embed src='/images/Resume.pdf' width="500" height="570">
 
 
-3 
+
+
+3
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 
