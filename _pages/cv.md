@@ -20,7 +20,7 @@ redirect_from:
 
 2
 
-<embed src='/images/Resume.pdf' width="500" height="580">
+<embed src='/images/Resume.pdf' width="500" height="585">
 
 
 
@@ -30,7 +30,7 @@ redirect_from:
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="950" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="945" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="955" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 
