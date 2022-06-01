@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="font-size: 32px; color: black; text-decoration: none;">Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="font-size: 33px; color: black; text-decoration: none;">Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/"><img src='/images/overdose_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -17,7 +17,7 @@ Throughout the years, there has been a dramatic increase in drug overdoses. We a
 
 
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="font-size: 37px; color: black; text-decoration: none;">An Analysis of AP Exam Participation Rates</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="font-size: 38px; color: black; text-decoration: none;">An Analysis of AP Exam Participation Rates</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-2/"><img src='/images/ap_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -27,7 +27,7 @@ Every year, millions of students take AP Exams in over 30 different subjects. Th
 
 
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 34px; color: black; text-decoration: none;">Replication of “Piso Firme” Program Impact Investigation</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 36px; color: black; text-decoration: none;">Replication of “Piso Firme” Program Impact Investigation</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/"><img src='/images/hhh_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -38,7 +38,7 @@ The paper concerns the impact of Piso Firme, a program that provided resources f
 
 
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="font-size: 40px; color: black; text-decoration: none;">genetic-selectR Package Development</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="font-size: 41px; color: black; text-decoration: none;">genetic-selectR Package Development</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/"><img src='/images/ga_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
