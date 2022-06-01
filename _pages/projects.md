@@ -13,11 +13,18 @@ blahblah
 
 # [an example site](https://rhiannz.github.io//portfolio/portfolio-1/)
 
-<a href=https://rhiannz.github.io//portfolio/portfolio-1/ class=btn>"Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic"</a>
+
+[an example site](https://rhiannz.github.io//portfolio/portfolio-1/){border: none !important}
+
+[an example site](https://rhiannz.github.io//portfolio/portfolio-1/){border: none !important}
+
+<a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a>
 
 [Click me](http://www.google.com){: .btn}
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-1/"><img src='/images/overdose_cover.png' alt="HTML tutorial" style="width:500px;height:auto;"></a><br/><br/>Short description of portfolio item number 1
+<a href="https://rhiannz.github.io//portfolio/portfolio-1/"><img src='/images/overdose_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a><br/><br/>Short description of portfolio item number 1
+
+
 
 {% for post in site.projects %}
   {% include archive-single.html %}
