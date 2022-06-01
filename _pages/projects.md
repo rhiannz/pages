@@ -11,7 +11,7 @@ author_profile: true
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/"><img src='/images/overdose_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
-Short description of portfolio item number 1
+Throughout the years, there has been a dramatic increase in drug overdoses. We are currently at the point where overdoses are the cause of more deaths than car accidents, guns, or HIV. [1] Since 1999, there have been about 1 million fatal overdoses in the United States and just within the past year, over 100,000 have lost their lives due to overdose. [2] It is very clear that the drug epidemic is a widespread societal problem that needs to be properly researched and addressed... 
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
@@ -21,7 +21,7 @@ Short description of portfolio item number 1
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-2/"><img src='/images/ap_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
-Short description of portfolio item number 2
+Every year, millions of students take AP Exams in over 30 different subjects. These rigorous tests grant high school students the opportunity to earn early college credits if they receive a score of 3 or higher. And when they reach college, these early credits allow students to skip introductory classes, free up their class schedules, and allow for more flexibility to explore other courses and majors, study abroad, pursue a second degree, or graduate early. However, all AP students, even those...
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
@@ -31,7 +31,7 @@ Short description of portfolio item number 2
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/"><img src='/images/hhh_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
-Short description of portfolio item number 3
+The paper concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on the families’ health and welfare due to the administration of Piso Firme...
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
@@ -52,8 +52,6 @@ In this project, we created a R package implementing genetic algorithms for vari
 
 <a href="https://www.google.com/" style="color: black; text-decoration: none;">custom link</a>
 
-
-<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 
 
