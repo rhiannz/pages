@@ -4,7 +4,7 @@ excerpt: "<img src='/images/ga_cover.png'><br/>Short description of portfolio it
 collection: portfolio
 ---
 
-## I Introduction
+# I Introduction
 In this project, we created a R package implementing genetic algorithms for variable selection in regression
 problems, including both linear regression and GLMs. We allow users to choose their own fitness functions
 and by default it’s AIC. Several genetic operators, such as crossover and mutation are combined into this
@@ -12,9 +12,9 @@ whole selection process. We test all of our functions using different datasets a
 implementing our package on the Boston dataset are shown below.
 
 All code for this project can be found in GitHub repository: 
-<a href="https://github.berkeley.edu/asjew/GA" style="color: black; text-decoration: none;">https://github.berkeley.edu/asjew/GA</a>
+<a href="https://github.berkeley.edu/asjew/GA" style="color: steelblue; text-decoration: none;">https://github.berkeley.edu/asjew/GA</a>
 
-### II Algorithms
+## II Algorithms
 In order to implement this genetic selection algorithm, we partitioned each step of the algorithm into separate
 helper functions and formatted our main select function such that it carries out the genetic algorithm by
 calling each of our helper functions. Because each of our helper functions had a well-defined task, this also
@@ -22,7 +22,7 @@ allowed each of us to focus on building functions without having to consult each
 changes were being made. Each helper function is briefly described as follows:
 
 
-#### Calculate Fitness and Find the Best Model
+### Calculate Fitness and Find the Best Model
 In the calc_fit function, we aim to obtain fitness values for the population. The user can specify their own
 fitness function and regression type. For these two, the default are AIC and linear regression. Then we call
 find_best_model function to pick out the gene which has best fitness score(eg:for AIC, it’s the lowest) in
