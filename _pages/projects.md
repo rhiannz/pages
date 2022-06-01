@@ -14,9 +14,14 @@ blahblah
 # [an example site](https://rhiannz.github.io//portfolio/portfolio-1/)
 
 
-[an example site](https://rhiannz.github.io//portfolio/portfolio-1/){border: none !important}
+[an example site](https://rhiannz.github.io//portfolio/portfolio-1/){
+  color: blue;
+  text-decoration: none; /* no underline */
+}
 
-[an example site](https://rhiannz.github.io//portfolio/portfolio-1/){border: none !important}
+[an example site](https://rhiannz.github.io//portfolio/portfolio-1/){
+  border: none !important;
+ }
 
 <a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a>
 
