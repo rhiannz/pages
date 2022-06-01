@@ -23,7 +23,11 @@ blahblah
   border: none !important;
  }
 
-<a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a>
+<a href="https://www.google.com/" style="color: black; text-decoration: none;">custom link</a>
+
+<a href="https://www.google.com/" style="color: black; text-decoration: none; font-size: 100px;">custom link</a>
+
+<a href="https://www.google.com/" style="font-size: 100px; color: black; text-decoration: none;">custom link</a>
 
 [Click me](http://www.google.com){: .btn}
 
