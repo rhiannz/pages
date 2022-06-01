@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-## title 
+## title
 
 blahblah
 
@@ -19,9 +19,9 @@ blahblah
 
 [Click me](http://www.google.com){: .btn}
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="color: black; text-decoration: none;" class="btn">Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="color: blue; text-decoration: none;" class="btn">See more</a>
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-1/" class="btn" style="color: black; text-decoration: none;">"Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic"</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-1/" class="btn" style="color: black; text-decoration: none;">See more</a>
 
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/"><img src='/images/overdose_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a><br/><br/>Short description of portfolio item number 1
