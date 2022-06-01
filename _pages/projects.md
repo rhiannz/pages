@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "--Projects--"
+title: "Projects"
 permalink: /projects/
 author_profile: true
 ---
@@ -17,7 +17,7 @@ Short description of portfolio item number 1
 
 
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="font-size: 20px; color: black; text-decoration: none;">An Analysis of AP Exam Participation Rates</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="font-size: 37px; color: black; text-decoration: none;">An Analysis of AP Exam Participation Rates</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-2/"><img src='/images/ap_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -27,7 +27,7 @@ Short description of portfolio item number 2
 
 
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 10px; color: black; text-decoration: none;">Replication of “Piso Firme” Program Impact Investigation</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 33px; color: black; text-decoration: none;">Replication of “Piso Firme” Program Impact Investigation</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/"><img src='/images/hhh_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -42,7 +42,7 @@ Short description of portfolio item number 3
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/"><img src='/images/ga_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
-Short description of portfolio item number 4
+In this project, we created a R package implementing genetic algorithms for variable selection in regression problems, including both linear regression and GLMs. We allow users to choose their own fitness functions and by default it’s AIC. Several genetic operators, such as crossover and mutation are combined into this whole selection process. We test all of our functions using different datasets and criteria. The results implementing our package on the Boston dataset are shown...
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
