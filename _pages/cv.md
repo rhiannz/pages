@@ -13,9 +13,7 @@ redirect_from:
 
 <embed src='/images/Resume.pdf' width="350" height="450">
 
-<embed src='/images/Resume.pdf' width="80%" >
 
-<iframe style="position: absolute; weight: 80%" src= '/images/Resume.pdf' />
 
 
 
