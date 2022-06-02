@@ -129,17 +129,30 @@ Given the performance of our model, we also acknowledge that there is still room
 All in all, this is a very complex societal issue that is still being explored today and we hope that future research will be able to find the right solutions to properly address and counteract the drug overdose epidemic. 
 
 
-<span style="color:lightgray;font-weight:200;font-size:7px">
-    ### References
+<span style="color:darkgray;font-weight:300;font-size:11px">
+    References
+</span>
+
+<span style="color:silver;font-weight:200;font-size:10px">
+
     1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
+    
     2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, February 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/ 
+    
     3. Centers for Disease Control and Prevention, National Center for Health Statistics. Multiple Cause of Death, 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files, 1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Feb 16, 2022 1:22:58 AM
+    
     4. Centers for Disease Control and Prevention. (2021, November 10). U.S. opioid dispensing rate maps. Centers for Disease Control and Prevention. Retrieved March 18, 2022, from https://www.cdc.gov/drugoverdose/rxrate-maps/index.html
+    
     5. U.S. Bureau of Labor Statistics. (n.d.). Local Area Unemployment Statistics. U.S. Bureau of Labor Statistics. Retrieved March 18, 2022, from https://www.bls.gov/lau/#tables
+    
     6. U.S. Census Bureau. (2021, October 8). County population by characteristics: 2010-2019. Census.gov. Retrieved March 18, 2022, from https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html
+    
     7. U.S. Census Bureau. (2021, October 8). Small Area Income and Poverty Estimates (SAIPE) Program Datasets. Census.gov. Retrieved March 18, 2022, from https://www.census.gov/programs-surveys/saipe/data/datasets.html
+    
     8. Institute, V. (n.d.). Vera-Institute/Incarceration-Trends: Incarceration trends dataset and Documentation. GitHub. Retrieved March 18, 2022, from https://github.com/vera-institute/incarceration-trends
+    
     9. Rankings Data & Documentation: National Data & Documentation: 2010-2020. County Health Rankings & Roadmaps. (n.d.). Retrieved May 10, 2022, from https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation/national-data-documentation-2010-2019 
+    
     10. Rey, Arribas-Bel, Wolf (2020) Geographic Data Science with Python. Retrieved at https://geographicdata.science/book/intro.html.
- 
+    
 </span>
