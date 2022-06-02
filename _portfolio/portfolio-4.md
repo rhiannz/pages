@@ -1,10 +1,12 @@
 ---
-title: 'genetic-selectR Package Development'
+title: '-'
 excerpt: "<img src='/images/ga_cover.png'><br/>Short description of portfolio item number 2"
 collection: portfolio
 ---
 
 ![ga_cover](/images/ga_cover.png) 
+
+# genetic-selectR Package Development
 
 ## I Introduction
 In this project, we created a R package implementing genetic algorithms for variable selection in regression
