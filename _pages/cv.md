@@ -10,8 +10,9 @@ redirect_from:
 {% include base_path %}
 
 
-<iframe style="position: absolute; width: 80%" src= '/images/Resume.pdf' />
+<embed src='/images/Resume.pdf' width="350" height="450">
 
+<embed src='/images/Resume.pdf' width="300" height="450">
 
 Work experience
 ======
