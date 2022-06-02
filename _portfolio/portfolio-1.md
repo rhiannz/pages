@@ -133,11 +133,10 @@ All in all, this is a very complex societal issue that is still being explored t
     References
 </p>
 <p style="color:silver;font-weight:200;font-size:13px"> 
-    1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
-    <br>
-    2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, Fe
-    uary 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/ 
-    
+    <ol>
+        <li>1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html</li>
+        <li>2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, Febuary 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/</li>
+    </ol>  
     3. Centers for Disease Control and Prevention, National Center for Health Statistics. Multiple Cause of Death, 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files, 1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Feb 16, 2022 1:22:58 AM
     
     4. Centers for Disease Control and Prevention. (2021, November 10). U.S. opioid dispensing rate maps. Centers for Disease Control and Prevention. Retrieved March 18, 2022, from https://www.cdc.gov/drugoverdose/rxrate-maps/index.html
