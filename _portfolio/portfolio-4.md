@@ -1,5 +1,5 @@
 ---
-title: '-'
+title: none
 excerpt: "<img src='/images/ga_cover.png'><br/>Short description of portfolio item number 2"
 collection: portfolio
 ---
