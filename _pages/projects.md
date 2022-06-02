@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="font-size: 37px; color: black; text-decoration: none;">Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="font-size: 38px; color: black; text-decoration: none;">Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/"><img src='/images/overdose_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
