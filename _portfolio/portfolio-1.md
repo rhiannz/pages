@@ -6,17 +6,19 @@ collection: portfolio
 
 Check out this slide deck to get a quick overview of this project: 
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="700" height=auto allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="700" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="750" height="auto" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="750" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 
-## I   Problem Description 
+## I &nbsp; Problem Description 
 Throughout the years, there has been a dramatic increase in drug overdoses. We are currently at the point where overdoses are the cause of more deaths than car accidents, guns, or HIV. [1] Since 1999, there have been about 1 million fatal overdoses in the United States and just within the past year, over 100,000 have lost their lives due to overdose. [2] It is very clear that the drug epidemic is a widespread societal problem that needs to be properly researched and addressed. 
 To do so, our team will be analyzing the number of fatal overdoses in United States counties throughout the last 20 years and exploring the question: Which characteristics of U.S. counties can best explain drug overdose rates? We also hope to estimate overdose rates in the counties that are missing data in our main overdose dataset. The successful completion of these tasks will allow us to provide policy makers with valuable information about the areas of the U.S. that are not easily observed simply with the raw overdose counts as well as insight as to what factors to focus on and which communities should be addressed more urgently when trying to counteract the drug overdose epidemic. 
 
-## II   Data description 
+## II &emsp; Data description 
+
+## II '>' Data description 
 Data Generation 
 Our team obtained our drug overdose data from the CDC Wonder Search website by requesting data that specifically pertains to overdoses using their “underlying cause of death” codes. [3] The CDC collected this data through the Vital Statistics Cooperative to provide health departments and the general public with open access to detailed information that is beneficial in public health research and decision making. 
 
@@ -33,3 +35,17 @@ Our team hypothesized that socioeconomic status would be closely connected to ov
 Figure 3. Average Drug Overdoses per 100k People in the United States by County (2011 - 2020)
 
 strong indicator of overdose rates. So for each county, we calculated the average overdose rate of its adjacent counties during that year - which we labeled `Spatial_Mean` - believing that higher overdose rates in neighboring counties would correspond to a higher overdose rate in the focal county.  
+
+
+## III   Methods 
+### Moran’s I
+We first utilized Moran’s I to determine the significance of the spatial component in our data. In particular, we are measuring how similar one county’s overdose rate is to all other counties. Moran’s I can be calculated with 
+
+$$I = \frac{n \sum_{i=1}^{n} \sum_{j=1}^{n} w_{i,j}z_{i}z_{j}}{\sum_{i=1}^{n} \sum_{j=1}^{n} w_{i,j}\sum_{i=1}^{n} z_{i}^2$$ 
+
+such that $n$ is the total number of counties and $z_i$ is an overdose rate’s deviation from its mean $(x_i - \bar{X})$ for county $i$. Similarly, $z_j$ is an overdose rate’s deviation from its mean $(x_j - \bar{X})$ for county $j$. $w_{i,j}$ is the spatial weight between the $i$-th and $j$-th county. More specifically, $w_{i,j}$ is a weight matrix having a 1 where county $i$ is adjacent to county $j$ and a 0 when the $i$-th county is not adjacent to the $j$-th county. [10] Typically, Moran’s I values range from -1 to 1 and, as a general rule of thumb, a value below -0.3 or above 0.3 is deemed to be significant. 
+Our Moran’s I is about 0.461 for our United States overdose data, indicating a significant positive spatial autocorrelation relationship between the counties. Hence, we ensured that our spatial component, Spatial_Mean (explained in Section 2), is taken into account in our first round of modeling. 
+
+### OLS Regression 
+Throughout our modeling, we used a general ordinary least squares (OLS) regression which is given by 
+
