@@ -129,13 +129,14 @@ Given the performance of our model, we also acknowledge that there is still room
 All in all, this is a very complex societal issue that is still being explored today and we hope that future research will be able to find the right solutions to properly address and counteract the drug overdose epidemic. 
 
 
-<span style="color:darkgray;font-weight:300;font-size:11px">
+<p style="color:darkgray;font-weight:300;font-size:14px">
     References
-</span>
-
-<p style="color:silver;font-weight:200;font-size:10px"> 1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
-    
-    2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, February 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/ 
+</p>
+<p style="color:silver;font-weight:200;font-size:13px"> 
+    1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
+    <br>
+    2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, Fe
+    uary 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/ 
     
     3. Centers for Disease Control and Prevention, National Center for Health Statistics. Multiple Cause of Death, 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files, 1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Feb 16, 2022 1:22:58 AM
     
