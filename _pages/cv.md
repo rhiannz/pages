@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 
-<embed src='/images/Resume.pdf' width="350" height="400">
+<embed src='/images/Resume.pdf' width="40" height="50">
 
 <embed src='/images/Resume.pdf' width="350" height="410">
 
