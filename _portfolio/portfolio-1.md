@@ -20,12 +20,13 @@ Our team obtained our drug overdose data from the CDC Wonder Search website by r
 ### Variables of Interest 
 Our primary overdose dataset provides variables of interest such as year, county, overdose death count, and county population. We used these features to calculate the Overdose_Rate_per_100k which is the number of overdoses per 100,000 people. This will act as our main variable of interest. In this dataset, we observe a varying number of counties each year. However, the number of observed counties does increase throughout the years (Figure 1) and we have also confirmed that each year of data includes more than 50% of the United States population, despite missing a significant amount of counties. We have also gathered additional datasets detailing various factors that may relate to overdose rates (opioid dispensary rates [4], unemployment rates [5], ethnicity [6], poverty [7], median household incomes [7], jail populations [8], and other various health-related characteristics [9]). We have acquired all of our data by county and will be analyzing the relationships between our chosen features at this granular level. Unfortunately, we were unable to locate accurate and robust data for some of our additional variables on a county level before 2011. Hence, our analysis will focus on the years 2011 to 2020 in order to minimize the number of missing values while maintaining the wide time range of a decade. The final version of our dataset (Figure 2) includes 31,420 rows and 44 columns. 
 
-![od_Fig1](/images/od_Fig1.png =250x)
+
+
+<img src="images/od_Fig1.png" width="200">
 
 Figure 1. Number of Observations included in Overdose Dataset by Year
 
-
-![od_Fig2](/images/od_Fig2.png =100x)
+<img src="images/od_Fig2.png" width="100">
 
 Figure 2. Visualizing Missing Data in Final Dataset (2011-2020)
 
@@ -133,7 +134,7 @@ All in all, this is a very complex societal issue that is still being explored t
     
 
 <p style="color:silver;font-weight:200;font-size:13px"> 
-    <b><font size="+1">References</font></b>
+    <b><font size="+0">References</font></b><br>
     &emsp; 1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
     <br>
     &ensp; 2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, Febuary 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/
