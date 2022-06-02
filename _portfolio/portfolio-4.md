@@ -4,6 +4,8 @@ excerpt: "<img src='/images/ga_cover.png'><br/>Short description of portfolio it
 collection: portfolio
 ---
 
+![ga_cover](/images/ga_cover.png) 
+
 ## I Introduction
 In this project, we created a R package implementing genetic algorithms for variable selection in regression
 problems, including both linear regression and GLMs. We allow users to choose their own fitness functions
@@ -79,7 +81,7 @@ Next, we increase our crossover points from default 1 to 6 and see how it change
 As shown above, we can easily observe that the more crossover points we have, the faster convergence we
 achieve.
 
-### Change Mutation Rate
+### Changing the Mutation Rate
 We change our mutation from 0.01 to 0.1 and check how it’s gonna affect our result.
 
 ![ga_result-3](/images/ga_result-3.png) 
@@ -89,7 +91,7 @@ We change our mutation from 0.01 to 0.1 and check how it’s gonna affect our re
 As we expected, generally smaller mutation rate leads to better overall goodness of fit of population. It can
 be seen that the smaller the mutation rate, the faster the convergence will be.
 
-### Change different fitness functions
+### Changing the fitness function
 In the end, we change our objective function to log likelihood and see how well our algorithm performs on
 this objective.
 
@@ -114,9 +116,9 @@ We began our project by brainstorming together and confirming that we all had an
 of the general task that we were trying to carry out as well as what smaller actions were expecting from
 each other. During our meetings, we assigned the smaller tasks amongst ourselves and planned out our
 next steps together. Ashlyn created the calc_fit.R, test_calc_fit.R, gen_firstgen.R, test_gen_firstgen.R,
-select_parents.R, test_select_parents.R, and simulate_gene.R files. She also put our package together.
-Rhiann created the select.R, test_select.R, find_best_model.R, mutate_genes.R files, as well as the tournament section of the select_parents.R file. Steven created the crossover_p_split.R, test_crossover_p_split.R,
-test_mutate_genes.R. Rhiann and Steven also created the write-up together. And each of us wrote the documentation for each our helper functions.
+select_parents.R, test_select_parents.R, and simulate_gene.R files. She also put our package together. 
+Steven created the crossover_p_split.R, test_crossover_p_split.R, test_mutate_genes.R.
+Rhiann created the select.R, test_select.R, find_best_model.R, mutate_genes.R files, as well as the tournament section of the select_parents.R file. Rhiann and Steven also created the write-up together. Each of us also wrote the documentation for our respective helper functions.
 
 ## VI Discussion
 If users want to implement our package to do variable selection, we recommend to choose larger number
