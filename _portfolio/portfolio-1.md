@@ -133,9 +133,7 @@ All in all, this is a very complex societal issue that is still being explored t
     References
 </span>
 
-<span style="color:silver;font-weight:200;font-size:10px">
-
-    1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
+<p style="color:silver;font-weight:200;font-size:10px"> 1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
     
     2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, February 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/ 
     
@@ -155,4 +153,4 @@ All in all, this is a very complex societal issue that is still being explored t
     
     10. Rey, Arribas-Bel, Wolf (2020) Geographic Data Science with Python. Retrieved at https://geographicdata.science/book/intro.html.
     
-</span>
+</p>
