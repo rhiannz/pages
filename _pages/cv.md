@@ -9,12 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src='/images/Resume.pdf' width="80%" height="auto">
 
-<embed src='/images/Resume.pdf' width="350" height=auto>
-
-
-
+<iframe style="position: absolute; width: 80%" src= '/images/Resume.pdf' />
 
 
 Work experience
