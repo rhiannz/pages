@@ -17,13 +17,13 @@ Throughout the years, there has been a dramatic increase in drug overdoses. We a
 
 <hr/>
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="font-size: 38px; color: black; text-decoration: none;">An Analysis of AP Exam Participation Rates</a>
+<a href="https://rhiannz.github.io/AP-Participation/" style="font-size: 38px; color: black; text-decoration: none;">An Analysis of AP Exam Participation Rates</a>
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-2/"><img src='/images/ap_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
+<a href="https://rhiannz.github.io/AP-Participation/"><img src='/images/ap_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
 Every year, millions of students take AP Exams in over 30 different subjects. These rigorous tests grant high school students the opportunity to earn early college credits if they receive a score of 3 or higher. And when they reach college, these early credits allow students to skip introductory classes, free up their class schedules, and allow for more flexibility to explore other courses and majors, study abroad, pursue a second degree, or graduate early. However, all AP students, even those...
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
+<a href="https://rhiannz.github.io/AP-Participation/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 <hr/>
 
