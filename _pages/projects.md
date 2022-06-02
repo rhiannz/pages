@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="font-size: 33px; color: black; text-decoration: none;">Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="font-size: 36px; color: black; text-decoration: none;">Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/"><img src='/images/overdose_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -38,7 +38,7 @@ The paper concerns the impact of Piso Firme, a program that provided resources f
 
 
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="font-size: 41px; color: black; text-decoration: none;">genetic-selectR Package Development</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="font-size: 42px; color: black; text-decoration: none;">genetic-selectR Package Development</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/"><img src='/images/ga_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
