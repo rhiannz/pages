@@ -9,22 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-
-![Resume](/images/Resume-1.png) 
-
-
-
-2
-
-<embed src='/images/Resume.pdf' width="500" height="585">
-
-
-
-
-3
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="955" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
+<embed src='/images/Resume.pdf' width="450" height="585">
 
 
 
