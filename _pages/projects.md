@@ -15,9 +15,7 @@ Throughout the years, there has been a dramatic increase in drug overdoses. We a
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
-
-<br/><br/>
-
+<br/>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="font-size: 38px; color: black; text-decoration: none;">An Analysis of AP Exam Participation Rates</a>
 
@@ -27,9 +25,7 @@ Every year, millions of students take AP Exams in over 30 different subjects. Th
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
-
 <br/>
-
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 36px; color: black; text-decoration: none;">Replication of “Piso Firme” Program Impact Investigation</a>
 
@@ -39,8 +35,7 @@ The paper concerns the impact of Piso Firme, a program that provided resources f
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
-
-
+<br/>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="font-size: 42px; color: black; text-decoration: none;">genetic-selectR Package Development</a>
 
@@ -51,7 +46,7 @@ In this project, we created a R package implementing genetic algorithms for vari
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 
-
+<br/><br/>
 
 
 <a href="https://www.google.com/" style="color: black; text-decoration: none;">custom link</a>
