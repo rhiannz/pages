@@ -14,7 +14,7 @@ whole selection process. We test all of our functions using different datasets a
 implementing our package on the Boston dataset are shown below.
 
 All code for this project can be found in GitHub repository: 
-<a href="https://github.berkeley.edu/asjew/GA" style="color: steelblue; text-decoration: none;">https://github.berkeley.edu/asjew/GA</a>
+<a href="https://github.com/rhiannz/genetic-selectR" style="color: steelblue; text-decoration: none;">https://github.com/rhiannz/genetic-selectR</a>
 
 ## II Algorithms
 In order to implement this genetic selection algorithm, we partitioned each step of the algorithm into separate
