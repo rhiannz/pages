@@ -12,7 +12,9 @@ redirect_from:
 
 <embed src='/images/Resume.pdf' width="350" height="450">
 
-<embed src='/images/Resume.pdf' width="300" height="450">
+<embed src='/images/Resume.pdf' width="350" height="470">
+
+<embed src='/images/Resume.pdf' width="350" height="420">
 
 Work experience
 ======
