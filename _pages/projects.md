@@ -25,7 +25,7 @@ Every year, millions of students take AP Exams in over 30 different subjects. Th
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-2/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
-<hr style="height:40%">
+<hr/>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 36px; color: black; text-decoration: none;">Replication of “Piso Firme” Program Impact Investigation</a>
 
@@ -35,7 +35,7 @@ The paper concerns the impact of Piso Firme, a program that provided resources f
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
-<br/>
+<hr/>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="font-size: 42px; color: black; text-decoration: none;">genetic-selectR Package Development</a>
 
@@ -46,7 +46,7 @@ In this project, we created a R package implementing genetic algorithms for vari
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 
-<br/><br/>
+<hr/>
 
 
 <a href="https://www.google.com/" style="color: black; text-decoration: none;">custom link</a>
