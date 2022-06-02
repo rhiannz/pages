@@ -18,7 +18,7 @@ To do so, our team will be analyzing the number of fatal overdoses in United Sta
 Our team obtained our drug overdose data from the CDC Wonder Search website by requesting data that specifically pertains to overdoses using their “underlying cause of death” codes. [3] The CDC collected this data through the Vital Statistics Cooperative to provide health departments and the general public with open access to detailed information that is beneficial in public health research and decision making. 
 
 ### Variables of Interest 
-Our primary overdose dataset provides variables of interest such as year, county, overdose death count, and county population. We used these features to calculate the Overdose_Rate_per_100k which is the number of overdoses per 100,000 people. This will act as our main variable of interest. In this dataset, we observe a varying number of counties each year. However, the number of observed counties does increase throughout the years (Figure 1) and we have also confirmed that each year of data includes more than 50% of the United States population, despite missing a significant amount of counties. We have also gathered additional datasets detailing various factors that may relate to overdose rates (opioid dispensary rates [4], unemployment rates [5], ethnicity [6], poverty [7], median household incomes [7], jail populations [8], and other various health-related characteristics [9]). We have acquired all of our data by county and will be analyzing the relationships between our chosen features at this granular level. Unfortunately, we were unable to locate accurate and robust data for some of our additional variables on a county level before 2011. Hence, our analysis will focus on the years 2011 to 2020 in order to minimize the number of missing values while maintaining the wide time range of a decade. The final version of our dataset (Figure 2) includes 31,420 rows and 44 columns. 
+Our primary overdose dataset provides variables of interest such as year, county, overdose death count, and county population. We used these features to calculate the Overdose_Rate_per_100k which is the number of overdoses per 100,000 people. This will act as our main variable of interest. In this dataset, we observe a varying number of counties each year. However, the number of observed counties does increase throughout the years (Figure 1) and we have also confirmed that each year of data includes more than 50% of the United States population, despite missing a significant amount of counties. We have also gathered additional datasets detailing various factors that may relate to overdose rates (opioid dispensary rates <sup>[4]</sup>, unemployment rates [5], ethnicity [6], poverty [7], median household incomes [7], jail populations [8], and other various health-related characteristics [9]). We have acquired all of our data by county and will be analyzing the relationships between our chosen features at this granular level. Unfortunately, we were unable to locate accurate and robust data for some of our additional variables on a county level before 2011. Hence, our analysis will focus on the years 2011 to 2020 in order to minimize the number of missing values while maintaining the wide time range of a decade. The final version of our dataset (Figure 2) includes 31,420 rows and 44 columns. 
 
 
 
@@ -134,25 +134,25 @@ All in all, this is a very complex societal issue that is still being explored t
     
 
 <p style="color:silver;font-weight:200;font-size:13px"> 
-    <b><font size="+0">References</font></b><br>
+    <b><font weight="300">References</font></b><br>
     &emsp; 1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
     <br>
-    &ensp; 2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, Febuary 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/
+    &emsp; 2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, Febuary 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/
     <br>
-    &nbsp; 3. Centers for Disease Control and Prevention, National Center for Health Statistics. Multiple Cause of Death, 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files, 1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Feb 16, 2022 1:22:58 AM
+    &emsp; 3. Centers for Disease Control and Prevention, National Center for Health Statistics. Multiple Cause of Death, 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files, 1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Feb 16, 2022 1:22:58 AM
     <br>
-    4. Centers for Disease Control and Prevention. (2021, November 10). U.S. opioid dispensing rate maps. Centers for Disease Control and Prevention. Retrieved March 18, 2022, from https://www.cdc.gov/drugoverdose/rxrate-maps/index.html
+    &emsp; 4. Centers for Disease Control and Prevention. (2021, November 10). U.S. opioid dispensing rate maps. Centers for Disease Control and Prevention. Retrieved March 18, 2022, from https://www.cdc.gov/drugoverdose/rxrate-maps/index.html
     <br>
-    5. U.S. Bureau of Labor Statistics. (n.d.). Local Area Unemployment Statistics. U.S. Bureau of Labor Statistics. Retrieved March 18, 2022, from https://www.bls.gov/lau/#tables
+    &emsp; 5. U.S. Bureau of Labor Statistics. (n.d.). Local Area Unemployment Statistics. U.S. Bureau of Labor Statistics. Retrieved March 18, 2022, from https://www.bls.gov/lau/#tables
     <br>
-    6. U.S. Census Bureau. (2021, October 8). County population by characteristics: 2010-2019. Census.gov. Retrieved March 18, 2022, from https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html
+    &emsp; 6. U.S. Census Bureau. (2021, October 8). County population by characteristics: 2010-2019. Census.gov. Retrieved March 18, 2022, from https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html
     <br>
-    7. U.S. Census Bureau. (2021, October 8). Small Area Income and Poverty Estimates (SAIPE) Program Datasets. Census.gov. Retrieved March 18, 2022, from https://www.census.gov/programs-surveys/saipe/data/datasets.html
+    &emsp; 7. U.S. Census Bureau. (2021, October 8). Small Area Income and Poverty Estimates (SAIPE) Program Datasets. Census.gov. Retrieved March 18, 2022, from https://www.census.gov/programs-surveys/saipe/data/datasets.html
     <br>
-    8. Institute, V. (n.d.). Vera-Institute/Incarceration-Trends: Incarceration trends dataset and Documentation. GitHub. Retrieved March 18, 2022, from https://github.com/vera-institute/incarceration-trends
+    &emsp; 8. Institute, V. (n.d.). Vera-Institute/Incarceration-Trends: Incarceration trends dataset and Documentation. GitHub. Retrieved March 18, 2022, from https://github.com/vera-institute/incarceration-trends
     <br>
-    9. Rankings Data & Documentation: National Data & Documentation: 2010-2020. County Health Rankings & Roadmaps. (n.d.). Retrieved May 10, 2022, from https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation/national-data-documentation-2010-2019 
+    &emsp; 9. Rankings Data & Documentation: National Data & Documentation: 2010-2020. County Health Rankings & Roadmaps. (n.d.). Retrieved May 10, 2022, from https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation/national-data-documentation-2010-2019 
     <br>
-    10. Rey, Arribas-Bel, Wolf (2020) Geographic Data Science with Python. Retrieved at https://geographicdata.science/book/intro.html.
+    &emsp; 10. Rey, Arribas-Bel, Wolf (2020) Geographic Data Science with Python. Retrieved at https://geographicdata.science/book/intro.html.
     
 </p>
