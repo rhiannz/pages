@@ -128,6 +128,8 @@ Now, with these findings, our team is able to provide policy makers with more in
 Given the performance of our model, we also acknowledge that there is still room for improvement. Naturally, there is the possibility that other confounding variables we were unable to take into account may have been a large factor in explaining overdose rates. The implementation of other methods such as a time series or weighted least squares model could also further our findings as well. 
 All in all, this is a very complex societal issue that is still being explored today and we hope that future research will be able to find the right solutions to properly address and counteract the drug overdose epidemic. 
 
+
+<span style="color:gray;font-weight:700;font-size:10px">
 ### References
 1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
 2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, February 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/ 
@@ -139,3 +141,4 @@ All in all, this is a very complex societal issue that is still being explored t
 8. Institute, V. (n.d.). Vera-Institute/Incarceration-Trends: Incarceration trends dataset and Documentation. GitHub. Retrieved March 18, 2022, from https://github.com/vera-institute/incarceration-trends
 9. Rankings Data & Documentation: National Data & Documentation: 2010-2020. County Health Rankings & Roadmaps. (n.d.). Retrieved May 10, 2022, from https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation/national-data-documentation-2010-2019 
 10. Rey, Arribas-Bel, Wolf (2020) Geographic Data Science with Python. Retrieved at https://geographicdata.science/book/intro.html. 
+</span>
