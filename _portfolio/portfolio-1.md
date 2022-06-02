@@ -8,9 +8,6 @@ Check out this slide deck to get a quick overview of this project:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="740" height="430" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwHy4oVQLOq2XaQOHJ0SuZl2qeyPU1jzc7YnCI00WnBplgJ_CMea61TNMmnvgpu4VOKltChKcWn-sP/embed?start=true&loop=true&delayms=7000" frameborder="0" width="750" height="440" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-
 
 ## I &nbsp; Problem Description 
 Throughout the years, there has been a dramatic increase in drug overdoses. We are currently at the point where overdoses are the cause of more deaths than car accidents, guns, or HIV. [1] Since 1999, there have been about 1 million fatal overdoses in the United States and just within the past year, over 100,000 have lost their lives due to overdose. [2] It is very clear that the drug epidemic is a widespread societal problem that needs to be properly researched and addressed. 
@@ -44,4 +41,34 @@ Our Moran’s I is about 0.461 for our United States overdose data, indicating a
 
 ### OLS Regression 
 Throughout our modeling, we used a general ordinary least squares (OLS) regression which is given by 
+
+$$y_{it} = \beta_{0} + \sum_{k=1}^{p} \beta_{k} x_{itk} + \epsilon_{it}$$
+
+such that $y_{it}$ is our drug overdose rate of county $i$ in year $t$, $x_{itk}$ is the $k$-th explanatory variable of county $i$ in year $t$, $p$ is the total number of features included in our model, $\beta_k$ is the global coefficient that describes the relationship between the $k$-th feature and our response variable, $\beta_0$ is the global intercept coefficient, and $\epsilon_{it}$ is the random error term associated with county $i$ during year $t$. 
+
+### Baseline Model  
+For our baseline model, we used an OLS model, running the log of the overdose rates against only the spatial mean. We decided to log transform our overdose variables since they were skewing towards the right. As seen in Figure 4, our overdose rates were much more normally distributed after performing a log transformation. The results of this model ⎯ `log(Overdose_Rate_per_100k) ~ Spatial_Mean` ⎯ can be seen in Table 1. In particular, our baseline returned an adjusted R-squared of 0.451, indicating that our spatial component already accounts for a considerable amount of the variation in our data. Additionally, we observed a normalized RMSE of 0.0938, telling us that our baseline is already a pretty good fitting model since this value is close to zero. 
+
+
+![od_Fig4](/images/od_Fig4.png)
+
+Figure 4. Histogram of `Overdose_Rate_per_100k` (pictured on the left) and Histogram of `log(Overdose_Rate_per_100k)` (pictured on the right) 
+
+### Backward Stepwise Feature Selection 
+After exploring our baseline model, we performed a backward selection to determine which of our features can most explain overdose rates. Since many of our features are related to each other and there is quite a bit of multicollinearity present within our data, we opted to use a backward selection instead of a forward selection as it is more suited to dealing with colinearity. We utilized 5-fold cross-validation and, with RMSE as our metric, determined that our best model includes the following 8 features: 
+
+| Entry                      | Description                                                              |
+| -------------------------- | ------------------------------------------------------------------------ | 
+| `Spatial_Mean`             | the average overdose rate of counties adjacent to the focal county       |
+| `PrimCarePhys_per_100k`    | the number of primary care physicians per 100k residents                 | 
+| `Pct_Uninsured`            | the percentage of uninsured residents                                    |
+| `Pct_Child_in_1ParentHH`   | the percentage of children living in households with one parent          |
+| `Pct_Poverty`              | the percentage of residents living in poverty                            | 
+| `Pct_Black`                | the percentage of Black residents                                        |
+| `Pct_Age_lt_18`            | the percentage of residents who are less than 18 years old               |
+| `Potential_Years_Lost`     | the year of potential life lost before age 75 per 100k residents         | 
+
+
+
+
 
