@@ -1,12 +1,15 @@
 ---
-title: 'Replication of "Piso Firme" Program Impact Investigation'
+title: '&nbsp;'
 excerpt: "<img src='/images/hhh_cover.png'><br/>Short description of portfolio item number 2"
 collection: portfolio
 ---
 
+![hhh_cover](/images/hhh_cover.png)
+
+# Replication of "Piso Firme" Program Impact Investigation
+
 This project replicates and interprets the results of the Matias D. Cattaneo, Sebastian Galiani, Paul J. Gertler, Sebastian Martinez, and Rocio Titunik’s (2009) “[Housing, Health, and Happiness](https://www.aeaweb.org/articles?id=10.1257/pol.1.1.75)” study. 
 
-![hhh_cover](/images/hhh_cover.png)
 
 ## I &nbsp; Summary
 &nbsp; The paper concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on the families’ health and welfare due to the administration of Piso Firme.
