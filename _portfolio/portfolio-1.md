@@ -22,21 +22,21 @@ Our primary overdose dataset provides variables of interest such as year, county
 
 
 
-<p style="text-align:center;"><img src="/images/od_Fig1.png" alt="drawing" width="600"/></p>
+<center><img src="/images/od_Fig1.png" alt="drawing" width="600"/></center>
 
-Figure 1. Number of Observations included in Overdose Dataset by Year
-
-<p style="text-align:center;"><img src="/images/od_Fig2.png" class="center" width="700"> <br>
-
-Figure 2. Visualizing Missing Data in Final Dataset (2011-2020) <br>
-
-Note: The figure above details the missing values of our data frame after merging our covariates with all U.S. counties. Black represents the available data. White represents the missing values. 31420 indicates the number of rows in our overall data frame. </p>
+&emsp; Figure 1. Number of Observations included in Overdose Dataset by Year
 
 
-<p style="text-align:center;line-height:1.2"><img src="/images/od_Tab1.png" class="center" width="700"><br>
+<img src="/images/od_Fig2.png" class="centerImage" width="700">
 
+&emsp; Figure 2. Visualizing Missing Data in Final Dataset (2011-2020) 
+
+&emsp; Note: The figure above details the missing values of our data frame after merging our covariates with all U.S. counties. Black represents the available data. White represents the missing values. 31420 indicates the number of rows in our overall data frame. 
+
+
+<p style="line-height:1.2">
+<p style="text-align:center;"><img src="/images/od_Tab1.png" class="center" width="700"></p>
 Table 1. OLS Regression Results of Baseline Model<br>
-
 Note: Our baseline model is `log(Overdose_Rate_per_100k) ~ Spatial_Mean` </p>
 
 ### Hypothesized Relationships
@@ -76,7 +76,7 @@ Figure 4. Histogram of `Overdose_Rate_per_100k` (pictured on the left) and Histo
 ### Backward Stepwise Feature Selection 
 After exploring our baseline model, we performed a backward selection to determine which of our features can most explain overdose rates. Since many of our features are related to each other and there is quite a bit of multicollinearity present within our data, we opted to use a backward selection instead of a forward selection as it is more suited to dealing with colinearity. We utilized 5-fold cross-validation and, with RMSE as our metric, determined that our best model includes the following 8 features: 
 
-| Entry                      | Description                                                              |
+| Feature Name               | Description                                                              |
 | -------------------------- | ------------------------------------------------------------------------ | 
 | `Spatial_Mean`             | the average overdose rate of counties adjacent to the focal county       |
 | `PrimCarePhys_per_100k`    | the number of primary care physicians per 100k residents                 | 
