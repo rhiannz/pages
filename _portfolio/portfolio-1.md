@@ -22,17 +22,17 @@ Our primary overdose dataset provides variables of interest such as year, county
 
 
 
-<img src="/images/od_Fig1.png" alt="drawing" width="600"/>
+<img src="/images/od_Fig1.png" alt="drawing" class="center" width="600"/>
 
 Figure 1. Number of Observations included in Overdose Dataset by Year
 
-<img src="/images/od_Fig2.png" width="500">
+<img src="/images/od_Fig2.png" class="center" width="600">
 
 Figure 2. Visualizing Missing Data in Final Dataset (2011-2020)
 
 Note: The figure above details the missing values of our data frame after merging our covariates with all U.S. counties. Black represents the available data. White represents the missing values. 31420 indicates the number of rows in our overall data frame. 
 
-<img src="/images/od_Tab1.png" width="600">
+<img src="/images/od_Tab1.png" class="center" width="700">
 
 Table 1. OLS Regression Results of Baseline Model
 
