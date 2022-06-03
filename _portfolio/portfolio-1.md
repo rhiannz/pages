@@ -130,11 +130,11 @@ Given the performance of our model, we also acknowledge that there is still room
 All in all, this is a very complex societal issue that is still being explored today and we hope that future research will be able to find the right solutions to properly address and counteract the drug overdose epidemic. 
 
 
-
+<br>
     
 
 <p style="color:silver;font-weight:200;font-size:13px;line-height:2"> 
-    <font-weight="400">References</font><br>
+    <font size="+1">References</font><br>
     &emsp; 1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
     <br>
     &emsp; 2. Drug overdose death statistics [2022]: Opioids, fentanyl & more. NCDAS. (2022, Febuary 8). Retrieved March 20, 2022, from https://drugabusestatistics.org/drug-overdose-deaths/
