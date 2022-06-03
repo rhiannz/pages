@@ -24,7 +24,7 @@ Our primary overdose dataset provides variables of interest such as year, county
 
 &emsp;&emsp; Figure 1. Number of Observations included in Overdose Dataset by Year
 
-despite missing a significant amount of counties. We have also gathered additional datasets detailing various factors that may relate to overdose rates (opioid dispensary rates <sup>[4]</sup>, unemployment rates <sup>[5]</sup>, ethnicity <sup>[6]</sup>, poverty <sup>[7]</sup>, median household incomes <sup>[7]</sup>, jail populations <sup>[8]</sup>, and other various health-related characteristics <sup>[9]</sup>). We have acquired all of our data by county and will be analyzing the relationships between our chosen features at this granular level. Unfortunately, we were unable to locate accurate and robust data for some of our additional variables on a county level before 2011. Hence, our analysis will focus on the years 2011 to 2020 in order to minimize the number of missing values while maintaining the wide time range of a decade. The final version of our dataset (Figure 2) includes 31,420 rows and 44 columns. 
+despite missing a significant amount of counties. We have also gathered additional datasets detailing various factors that may relate to overdose rates (opioid dispensary rates <sup>[4]</sup>, unemployment rates <sup>[5]</sup>, ethnicity <sup>[6]</sup>, poverty <sup>[7]</sup>, median household incomes <sup>[7]</sup>, jail populations <sup>[8]</sup>, and other various health-related characteristics <sup>[9]</sup>). We have acquired all of our data by county and will be analyzing the relationships between our chosen features at this granular level. Unfortunately, we were unable to locate accurate and robust data for some of our additional variables on a county level before 2011. Hence, our analysis will focus on the years 2011 to 2020 in order to minimize the number of missing values while maintaining the wide time range of a decade. The final version of our dataset (Figure 2) includes 31,420 rows and 44 columns. <br>
 
 
 <center><img src="/images/od_Fig2.png" width="700"></center>
@@ -38,7 +38,7 @@ Our team hypothesized that socioeconomic status would be closely connected to ov
 
 <center><img src="/images/od_Fig3.png" alt="drawing" width="700"/></center>
 
-&emsp;&emsp; Figure 3. Average Drug Overdoses per 100k People in the United States by County (2011-2020)
+&emsp;&emsp; Figure 3. Average Drug Overdoses per 100k People in United States by County (2011-2020)
 
 ## III &nbsp; Methods 
 ### Moran’s I
@@ -61,41 +61,45 @@ For our baseline model, we used an OLS model, running the log of the overdose ra
 
 <center><img src="/images/od_Fig4.png" alt="drawing" width="700"/></center>
 
-&emsp;&emsp; Figure 4. Histogram of `Overdose_Rate_per_100k` (pictured on the left) and Histogram of `log(Overdose_Rate_per_100k)` (pictured on the right) 
+&emsp;&emsp; Figure 4. Histogram of `Overdose_Rate_per_100k` (pictured on the left) and Histogram of `log(Overdose_Rate_per_100k)` (pictured on the right) <br> 
 
 The results of this model ⎯ `log(Overdose_Rate_per_100k) ~ Spatial_Mean` ⎯ can be seen in Table 1. In particular, our baseline returned an adjusted R-squared of 0.451, indicating that our spatial component already accounts for a considerable amount of the variation in our data. Additionally, we observed a normalized RMSE of 0.0938, telling us that our baseline is already a pretty good fitting model since this value is close to zero. 
 
 <center><img src="/images/od_Tab1.png" class="center" width="700"></center>
-&emsp; Table 1. OLS Regression Results of Baseline Model <br>
-&emsp; <font size="-0.5">Note: Our baseline model is</font> `log(Overdose_Rate_per_100k) ~ Spatial_Mean`
+&emsp;&emsp; Table 1. OLS Regression Results of Baseline Model <br>
+&emsp;&emsp; <font size="-0.5">Note: Our baseline model is</font> `log(Overdose_Rate_per_100k) ~ Spatial_Mean`
 
 
 ### Backward Stepwise Feature Selection 
 After exploring our baseline model, we performed a backward selection to determine which of our features can most explain overdose rates. Since many of our features are related to each other and there is quite a bit of multicollinearity present within our data, we opted to use a backward selection instead of a forward selection as it is more suited to dealing with colinearity. We utilized 5-fold cross-validation and, with RMSE as our metric, determined that our best model includes the following 8 features: 
 
-| Feature Name               | Description                                                              |
-| -------------------------- | ------------------------------------------------------------------------ | 
-| `Spatial_Mean`             | the average overdose rate of counties adjacent to the focal county       |
-| `PrimCarePhys_per_100k`    | the number of primary care physicians per 100k residents                 | 
-| `Pct_Uninsured`            | the percentage of uninsured residents                                    |
-| `Pct_Child_in_1ParentHH`   | the percentage of children living in households with one parent          |
-| `Pct_Poverty`              | the percentage of residents living in poverty                            | 
-| `Pct_Black`                | the percentage of Black residents                                        |
-| `Pct_Age_lt_18`            | the percentage of residents who are less than 18 years old               |
-| `Potential_Years_Lost`     | the year of potential life lost before age 75 per 100k residents         | 
+&emsp;&emsp;| Feature Name               | Description                                                              |
+&emsp;&emsp;| -------------------------- | ------------------------------------------------------------------------ | 
+&emsp;&emsp;| `Spatial_Mean`             | the average overdose rate of counties adjacent to the focal county       |
+&emsp;&emsp;| `PrimCarePhys_per_100k`    | the number of primary care physicians per 100k residents                 | 
+&emsp;&emsp;| `Pct_Uninsured`            | the percentage of uninsured residents                                    |
+&emsp;&emsp;| `Pct_Child_in_1ParentHH`   | the percentage of children living in households with one parent          |
+&emsp;&emsp;| `Pct_Poverty`              | the percentage of residents living in poverty                            | 
+&emsp;&emsp;| `Pct_Black`                | the percentage of Black residents                                        |
+&emsp;&emsp;| `Pct_Age_lt_18`            | the percentage of residents who are less than 18 years old               |
+&emsp;&emsp;| `Potential_Years_Lost`     | the year of potential life lost before age 75 per 100k residents         | 
 
-Table 2. Description of Features Found from Backward Stepwise Feature Selection 
+&emsp;&emsp;Table 2. Description of Features Found from Backward Stepwise Feature Selection 
 
 ### Variable Transformations  
-After modeling our logged overdose rates against the features found from our backward selection, we plotted the residuals against each of the selected covariates. Figure 5 shows the residuals plots of the variables that we decided to transform ⎯ `Pct_Black`, `PrimCarePhys_per_100k`, and `Spatial_Mean`. We can see how the plots on the left-hand side are more skewed towards the right. However, after performing the log transformations, the observations are scattered more randomly about the horizontal line. We should also note that we added 1 to our `Pct_Black` variable before log transforming it since many of the observations were very close to zero. We then continued on, using these transformed variables in our final model: 
+After modeling our logged overdose rates against the features found from our backward selection, we plotted the residuals against each of the selected covariates. Figure 5 shows the residuals plots of the variables that we decided to transform ⎯ `Pct_Black`, `PrimCarePhys_per_100k`, and `Spatial_Mean`. We can see how the plots on the left-hand side are more skewed towards the right. However, after performing the log transformations, the observations are scattered more randomly about the horizontal line. We should also note that we added 1 to our `Pct_Black` variable before log transforming it since many of the observations were very close to zero. 
+
+<center><img src="/images/od_Fig5.png" alt="drawing" width="700"/></center>
+
+&emsp;&emsp; Figure 5. Comparison of Residual Plots Before and After Transformation 
+
+
+We then continued on, using these transformed variables in our final model: 
 
 `log(Overdose_Rate_per_100k) ~ log(Spatial_Mean) + log(PrimCarePhys_per_100k) + 
 Pct_Uninsured + Pct_Child_in_1ParentHH + Pct_Poverty + log(Pct_Black + 1) + 
 Pct_Age_lt_18 + Potential_Years_Lost`
 
-<center><img src="/images/od_Fig5.png" alt="drawing" width="700"/></center>
-
-&emsp;&emsp; Figure 5. Comparison of Residual Plots Before and After Transformation 
 
 ## IV &nbsp; Results
 ### Final OLS Regression Results 
@@ -120,7 +124,7 @@ With our final model, we filled in our map. We began by using the model to estim
 
 <center><img src="/images/od_Fig7.png" alt="drawing" width="700"/></center>
 
-&emsp;&emsp; Figure 7. Visualization of the Sequential Procedure used to Fill In our Map of Overdose Rates  
+&emsp;&emsp; Figure 7. Visualization of Sequential Procedure Used to Fill In our Map of Overdose Rates  
 
 Iteration 0 displays the overdose rates that were already available in the dataset procured from the CDC. Iteration 1 showcases the counties we were able to fill in after performing one iteration of the process described above. Surprisingly, a substantial number of counties were already estimated through this single first step. Iteration 4 shows what our map looked like near the middle of the procedure and Iteration 8 shows the final state of our map after completing our recursive estimation process. Some counties still have not been filled in even after the final iteration because they are missing data pertaining to other features that are included in our model. Nevertheless, we are able to estimate overdose rates for the majority of our map despite these limitations. We should also note that because we are estimating using estimates, it is likely that slight deviations from the true values can build up throughout this process, leading to even greater differences as we approach the middle of our map. However, seeing that the expected clustering trends of higher and lower overdose rates are present, we can presume that our map is able to give a rather accurate overview of the drug overdose epidemic. 
 
@@ -131,7 +135,7 @@ All in all, this is a very complex societal issue that is still being explored t
 
 <br>
     
-<p style="color:darkgray;font-weight:200;font-size:13px;line-height:2"> 
+<p style="color:gray;font-weight:200;font-size:13px;line-height:2"> 
     <font size="+1">References</font><br>
     &emsp; 1. Katz, J. (2017, April 14). You draw it: Just how bad is the drug overdose epidemic? The New York Times. Retrieved March 18, 2022, from https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html
     <br>
