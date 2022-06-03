@@ -29,7 +29,7 @@ Our primary overdose dataset provides variables of interest such as year, county
 <center><img src="/images/od_Fig2.png" width="700"></center>
 
 &emsp; Figure 2. Visualizing Missing Data in Final Dataset (2011-2020) <br>
-&emsp; <p style="line-height:1.2"><font size="-1">Note: The figure above details the missing values of our data frame after merging our covariates with all U.S. counties. Black represents the available data. White represents the missing values. 31420 indicates the number of rows in our overall data frame.</font></p>
+&emsp; <font size="-1">Note: The figure above details the missing values of our data frame after merging our covariates with all U.S. counties. Black represents the available data. White represents the missing values. 31420 indicates the number of rows in our overall data frame.</font>
 
 
 <center><img src="/images/od_Tab1.png" class="center" width="700"></center>
