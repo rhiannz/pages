@@ -22,21 +22,22 @@ Our primary overdose dataset provides variables of interest such as year, county
 
 
 
-<p style="text-align:center;"><img src="/images/od_Fig1.png" alt="drawing" width="600"/>
+<p style="text-align:center;"><img src="/images/od_Fig1.png" alt="drawing" width="600"/></p>
 
 Figure 1. Number of Observations included in Overdose Dataset by Year
 
-<p style="text-align:center;"><img src="/images/od_Fig2.png" class="center" width="700">
+<p style="text-align:center;"><img src="/images/od_Fig2.png" class="center" width="700"> <br>
 
 Figure 2. Visualizing Missing Data in Final Dataset (2011-2020) <br>
 
 Note: The figure above details the missing values of our data frame after merging our covariates with all U.S. counties. Black represents the available data. White represents the missing values. 31420 indicates the number of rows in our overall data frame. </p>
 
-<img src="/images/od_Tab1.png" class="center" width="700">
 
-Table 1. OLS Regression Results of Baseline Model
+<p style="text-align:center;line-height:1.2"><img src="/images/od_Tab1.png" class="center" width="700"><br>
 
-Note: Our baseline model is `log(Overdose_Rate_per_100k) ~ Spatial_Mean` 
+Table 1. OLS Regression Results of Baseline Model<br>
+
+Note: Our baseline model is `log(Overdose_Rate_per_100k) ~ Spatial_Mean` </p>
 
 ### Hypothesized Relationships
 Our team hypothesized that socioeconomic status would be closely connected to overdose rates. Hence, we included variables such as poverty and unemployment rates, assuming that overdose rates would be higher in counties where these factors were higher. We included median household income as well, presuming that counties with a lower median income would correspond with counties with higher overdose rates. We also surmised a possible association between higher opioid dispensary rates and higher overdose rates. Additionally, we explored the jail populations of each county, supposing that increased crime rates would correlate to higher drug use and therefore, a higher overdose rate. We considered the possibility that minority groups would be disproportionately affected by the epidemic and therefore, included each county's ethnicity and sex demographics as well. We also collected multiple features relating to health such as the percent of residents who are uninsured, are smokers, or are excessive drinkers, presuming that lower access to health care and higher rates of health complications would be related to higher overdose rates as well. Our team postulated that the urbanicity and total population of a county would be positively correlated with drug overdoses as well. Due to the clustering of higher overdose rates in different areas of the United States which can be seen in Figure 3, we hypothesized that the geographical location of each county and their relative positions with each other would also be a 
