@@ -10,15 +10,14 @@ This project replicates and interprets the results of the Matias D. Cattaneo, Se
 
 
 ## I &nbsp; Summary
-&nbsp; The paper concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on the families’ health and welfare due to the administration of Piso Firme.
-
-&nbsp;	The study found that Piso Firme not only significantly decreased the prevalence of parasitic infestations, anemia, and diarrhea in young children but also improved their cognitive development as well. In addition, the study also discovered that the adults of the household also experience a substantial improvement in mental health and quality of life. 
+&emsp; The paper concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on the families’ health and welfare due to the administration of Piso Firme. <br>
+&emsp; The study found that Piso Firme not only significantly decreased the prevalence of parasitic infestations, anemia, and diarrhea in young children but also improved their cognitive development as well. In addition, the study also discovered that the adults of the household also experience a substantial improvement in mental health and quality of life. 
 
 ## II &nbsp; Data Description 
-&nbsp;	This study utilizes a cross-sectional household survey detailing the variables of interest in both the treatment groups (families residing in Torreón on the border of the State of Coahuila) who participated in Piso Firme and control groups (families residing in Lerdo/Gómez Palacios on the border of the State of Durango) who did not participate in Piso Firme at the time of observation. The study received 1390 completed surveys in the treatment area and 1393 completed surveys in the control area, resulting in a response rate of about 93% in both groups. Detailed information was collected concerning “household demographic structure, socioeconomic status, housing infrastructure (including detailed information on the type of floor in each room of the house), health outcomes, and cognitive development of children less than six years old, as well as happiness and mental health indicators for their mothers” (Matias D. Cattaneo et al. 2009). 
+&emsp; This study utilizes a cross-sectional household survey detailing the variables of interest in both the treatment groups (families residing in Torreón on the border of the State of Coahuila) who participated in Piso Firme and control groups (families residing in Lerdo/Gómez Palacios on the border of the State of Durango) who did not participate in Piso Firme at the time of observation. The study received 1390 completed surveys in the treatment area and 1393 completed surveys in the control area, resulting in a response rate of about 93% in both groups. Detailed information was collected concerning “household demographic structure, socioeconomic status, housing infrastructure (including detailed information on the type of floor in each room of the house), health outcomes, and cognitive development of children less than six years old, as well as happiness and mental health indicators for their mothers” (Matias D. Cattaneo et al. 2009). 
 
 ## III &nbsp; Summary Statistics Tables and Interpretations
-&nbsp;	The replication of Table 3 below details the number of observations, means, and standard errors for every independent variable in the treatment and control groups. It also includes the difference in both the means and the standard errors, which we can see are relatively small. This indicates that our treatment and control groups were well-balanced at the time when data was collected. However, we will account for these slight differences between the two groups during our analysis. 
+&emsp; The replication of Table 3 below details the number of observations, means, and standard errors for every independent variable in the treatment and control groups. It also includes the difference in both the means and the standard errors, which we can see are relatively small. This indicates that our treatment and control groups were well-balanced at the time when data was collected. However, we will account for these slight differences between the two groups during our analysis. 
 
 ![hhh_cover](/images/hhh_rep3.png)
 
@@ -28,30 +27,47 @@ This project replicates and interprets the results of the Matias D. Cattaneo, Se
 ### Linear Model Assumptions and Appraisal 
 The following are assumptions for linear models: 
 
-&nbsp; 1. Linearity
+&emsp; 1. Linearity
 
-&nbsp;&nbsp; The relationship between the dependent variable(s), Y, and the predictor variable(s), X, is linear: $Y=X\beta + \epsilon
+&emsp;&emsp;&emsp; The relationship between the dependent variable(s), Y, and the predictor variable(s), X, is linear: $Y=X\beta + \epsilon$
 
+&emsp;&emsp; While Cattaneo et al. (2009) do not clearly state their assumption of linearity, by utilizing linear models throughout their study, they imply that the dependent variables listed in the tables below are able to be explained by features regarding Piso Firme treatment, age, demographics, and health-habits through a linear relationship. 
 
+&emsp; 2. Independence
 
+&emsp;&emsp;&emsp; The response variable Y is independent of the residuals $\epsilon$:
+$$cov
+\begin{pmatrix}
+\Hat{Y} \\
+\hat{\epsilon}
+\end{pmatrix}
+= \sigma^2 
+\begin{pmatrix}
+H & 0_{nxn} \\
+)_{nxn} & I_n - H 
+\end{pmatrix} $$
 
-While Cattaneo et al. (2009) do not clearly state their assumption of linearity, by utilizing linear models throughout their study, they imply that the dependent variables listed in the tables below are able to be explained by features regarding Piso Firme treatment, age, demographics, and health-habits through a linear relationship. 
-Independence
-The response variable Y is independent of the residuals 𝜀: 
-The paper also assumes that there is no spatial autocorrelation present between the clusters in which they sampled their data. However, they assume that there is correlation within the clusters. This assumption is valid as they prove in their robustness checks that the error terms of the models were not correlated across clusters and hence they are justified in their use of this clustering structure.
-Normality 
-The residuals 𝜀 are normally distributed:   where  is an unknown parameter. 
-This assumption of normality can be validated by confirming that the observations are near the line of a normal probability plot or by verifying that the histogram of the residuals resembles a normal distribution. However, this paper does not explicitly address the assumption of normality. 
-Homoskedasticity
-The residuals 𝜀 have the same constant variance .
-cov(𝜀) = 
-Cattaneo et al. (2009) do not assume homoskedasticity, since they use robust clustered standard errors. They are instead assuming that the census block clusters have different variances.
+&emsp;&emsp; The paper also assumes that there is no spatial autocorrelation present between the clusters in which they sampled their data. However, they assume that there is correlation within the clusters. This assumption is valid as they prove in their robustness checks that the error terms of the models were not correlated across clusters and hence they are justified in their use of this clustering structure.
+
+&emsp;&emsp; 3. Normality 
+
+&emsp;&emsp;&emsp; The residuals $\epsilon$ are normally distributed: $\epsilon \sim N(0, \sigma^2 I_n)$ or $\epsilon_i \distas \distas{iid} \sim{iid} N(0, \sigma^2)$ where  $\sigma^2$ is an unknown parameter. 
+
+&emsp;&emsp; This assumption of normality can be validated by confirming that the observations are near the line of a normal probability plot or by verifying that the histogram of the residuals resembles a normal distribution. However, this paper does not explicitly address the assumption of normality. 
+
+&emsp; 4. Homoskedasticity
+
+&emsp;&emsp; The residuals $\epsilon$ have the same constant variance $\sigma^2$. $$cov(\epsilon) = \sigma^2 I_n$$
+&emsp;&emsp; Cattaneo et al. (2009) do not assume homoskedasticity, since they use robust clustered standard errors. They are instead assuming that the census block clusters have different variances.
 
 Treatment Effect Heterogeneity (or Difference-in-Difference) Assumptions:
-We can formulate the problem in terms of linear regression   where  is the dependent variable,   are the covariates, and  is the binary treatment variable.
-The control group acts as a proper counterfactual for the treatment group. 
-Trends in the treatment group and control group would have been the same in the absence of treatment.
-By restricting the sampling to similar socioeconomic and geographical locations and implementing a consistent eligibility criteria on all surveyed households, the paper confirms that the treatment and control groups act as appropriate comparisons for one another with respect to the observed features. 
+1. We can formulate the problem in terms of linear regression $y_i = \beta_0 + \beta_1 z_i + \beta_2^T x_i + \beta_3^T x_i z_i + \epsilon_i$ where $y_i$ is the dependent variable, $x_i$ are the covariates, and $z_i$ is the binary treatment variable.
+
+2. The control group acts as a proper counterfactual for the treatment group. 
+
+3. Trends in the treatment group and control group would have been the same in the absence of treatment.
+
+&emsp; By restricting the sampling to similar socioeconomic and geographical locations and implementing a consistent eligibility criteria on all surveyed households, the paper confirms that the treatment and control groups act as appropriate comparisons for one another with respect to the observed features. 
 
 ### Main Result Replication and Interpretation
 
