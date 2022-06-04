@@ -73,16 +73,16 @@ The results of this model ⎯ `log(Overdose_Rate_per_100k) ~ Spatial_Mean` ⎯ c
 ### Backward Stepwise Feature Selection 
 After exploring our baseline model, we performed a backward selection to determine which of our features can most explain overdose rates. Since many of our features are related to each other and there is quite a bit of multicollinearity present within our data, we opted to use a backward selection instead of a forward selection as it is more suited to dealing with colinearity. We utilized 5-fold cross-validation and, with RMSE as our metric, determined that our best model includes the following 8 features: 
 
-&emsp;&emsp;| Feature Name               | Description                                                              |
-&emsp;&emsp;| -------------------------- | ------------------------------------------------------------------------ | 
-&emsp;&emsp;| `Spatial_Mean`             | the average overdose rate of counties adjacent to the focal county       |
-&emsp;&emsp;| `PrimCarePhys_per_100k`    | the number of primary care physicians per 100k residents                 | 
-&emsp;&emsp;| `Pct_Uninsured`            | the percentage of uninsured residents                                    |
-&emsp;&emsp;| `Pct_Child_in_1ParentHH`   | the percentage of children living in households with one parent          |
-&emsp;&emsp;| `Pct_Poverty`              | the percentage of residents living in poverty                            | 
-&emsp;&emsp;| `Pct_Black`                | the percentage of Black residents                                        |
-&emsp;&emsp;| `Pct_Age_lt_18`            | the percentage of residents who are less than 18 years old               |
-&emsp;&emsp;| `Potential_Years_Lost`     | the year of potential life lost before age 75 per 100k residents         | 
+| Feature Name              | Description                                                        |
+| ------------------------- | ------------------------------------------------------------------ | 
+| `Spatial_Mean`            | the average overdose rate of counties adjacent to the focal county |
+| `PrimCarePhys_per_100k`   | the number of primary care physicians per 100k residents           | 
+| `Pct_Uninsured`           | the percentage of uninsured residents                              |
+| `Pct_Child_in_1ParentHH1` | the percentage of children living in households with one parent    |
+| `Pct_Poverty`             | the percentage of residents living in poverty                      | 
+| `Pct_Black`               | the percentage of Black residents                                  |
+| `Pct_Age_lt_18`           | the percentage of residents who are less than 18 years old         |
+| `Potential_Years_Lost`    | the year of potential life lost before age 75 per 100k residents   | 
 
 &emsp;&emsp;Table 2. Description of Features Found from Backward Stepwise Feature Selection 
 
