@@ -33,7 +33,7 @@ The following are assumptions for linear models:
 
 &emsp;&emsp; While Cattaneo et al. (2009) do not clearly state their assumption of linearity, by utilizing linear models throughout their study, they imply that the dependent variables listed in the tables below are able to be explained by features regarding Piso Firme treatment, age, demographics, and health-habits through a linear relationship. 
 
-2. Independence <br>
+&emsp; 2. Independence <br>
 > The response variable Y is independent of the residuals $\epsilon \;$:
 $$cov
 \begin{pmatrix}
@@ -55,7 +55,7 @@ H & 0_{nxn} \\
 &emsp;&emsp; This assumption of normality can be validated by confirming that the observations are near the line of a normal probability plot or by verifying that the histogram of the residuals resembles a normal distribution. However, this paper does not explicitly address the assumption of normality. 
 
 4. Homoskedasticity <br>
-> The residuals $\epsilon$ have the same constant variance $\sigma^2$. $$cov(\epsilon) = \sigma^2 I_n$$  
+> The residuals $\epsilon$ have the same constant variance $\sigma^2$: $$cov(\epsilon) = \sigma^2 I_n$$  
 
 
 &emsp;&emsp; Cattaneo et al. (2009) do not assume homoskedasticity, since they use robust clustered standard errors. They are instead assuming that the census block clusters have different variances.
