@@ -28,12 +28,11 @@ This project replicates and interprets the results of the Matias D. Cattaneo, Se
 ### Linear Model Assumptions and Appraisal 
 The following are assumptions for linear models: 
 
-1. Linearity <br>
-> The relationship between the dependent variable(s), Y, and the predictor variable(s), X, is linear: $Y= X \beta + \epsilon$
-
+- Linearity <br>
+> The relationship between the dependent variable(s), Y, and the predictor variable(s), X, is linear: $Y= X \beta + \epsilon$ > <br>
 &emsp;&emsp; While Cattaneo et al. (2009) do not clearly state their assumption of linearity, by utilizing linear models throughout their study, they imply that the dependent variables listed in the tables below are able to be explained by features regarding Piso Firme treatment, age, demographics, and health-habits through a linear relationship. 
-
-&emsp;&nbsp;2.&nbsp;Independence <br>
+ 
+ - 2. Independence <br>
 > The response variable Y is independent of the residuals $\epsilon \;$:
 $$cov
 \begin{pmatrix}
