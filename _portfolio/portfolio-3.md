@@ -33,10 +33,9 @@ The following are assumptions for linear models:
 
 &emsp;&emsp; While Cattaneo et al. (2009) do not clearly state their assumption of linearity, by utilizing linear models throughout their study, they imply that the dependent variables listed in the tables below are able to be explained by features regarding Piso Firme treatment, age, demographics, and health-habits through a linear relationship. 
 
-2. Independence
-
-> &emsp;&emsp; The response variable Y is independent of the residuals $\epsilon \;$:
-&emsp;&emsp; $$cov
+2. Independence <br>
+> The response variable Y is independent of the residuals $\epsilon \;$:
+$$cov
 \begin{pmatrix}
 \hat{Y} \\
 \hat{\epsilon}
@@ -45,19 +44,18 @@ The following are assumptions for linear models:
 \begin{pmatrix}
 H & 0_{nxn} \\
 0_{nxn} & I_n - H 
-\end{pmatrix} $$
-
+\end{pmatrix} $$ <br>
 &emsp;&emsp; The paper also assumes that there is no spatial autocorrelation present between the clusters in which they sampled their data. However, they assume that there is correlation within the clusters. This assumption is valid as they prove in their robustness checks that the error terms of the models were not correlated across clusters and hence they are justified in their use of this clustering structure.
 
 3. Normality <br>
-> The residuals $\epsilon$ are normally distributed: $\epsilon \sim N(0, \sigma^2 I_n)$ or $\epsilon_i \overset{\text{iid}}{\sim} N(0, \sigma^2)$ where  $\sigma^2$ is an unknown parameter. 
+> The residuals $\epsilon$ are normally distributed: $\epsilon \sim N(0, \sigma^2 I_n)$ or $\epsilon_i \overset{\text{iid}}{\sim} N(0, \sigma^2)$ where  $\sigma^2$ is an unknown parameter. <br>
 &emsp;&emsp; This assumption of normality can be validated by confirming that the observations are near the line of a normal probability plot or by verifying that the histogram of the residuals resembles a normal distribution. However, this paper does not explicitly address the assumption of normality. 
 
-4. Homoskedasticity
-
-> The residuals $\epsilon$ have the same constant variance $\sigma^2$. $$cov(\epsilon) = \sigma^2 I_n$$
-
+4. Homoskedasticity <br>
+> The residuals $\epsilon$ have the same constant variance $\sigma^2$. $$cov(\epsilon) = \sigma^2 I_n$$  <br>
 &emsp;&emsp; Cattaneo et al. (2009) do not assume homoskedasticity, since they use robust clustered standard errors. They are instead assuming that the census block clusters have different variances.
+ 
+ <br>
 
 Treatment Effect Heterogeneity (or Difference-in-Difference) Assumptions:
 1. We can formulate the problem in terms of linear regression $y_i = \beta_0 + \beta_1 z_i + \beta_2^T x_i + \beta_3^T x_i z_i + \epsilon_i$ where $y_i$ is the dependent variable, $x_i$ are the covariates, and $z_i$ is the binary treatment variable.
