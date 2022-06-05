@@ -46,14 +46,6 @@ In this project, we created a R package implementing genetic algorithms for vari
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 
-<hr/>
-
-
-<a href="https://www.google.com/" style="color: black; text-decoration: none;">custom link</a>
-
-
-
-
 {% for post in site.projects %}
   {% include archive-single.html %}
 {% endfor %}
