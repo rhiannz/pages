@@ -33,7 +33,7 @@ The following are assumptions for linear models:
 
 &emsp;&emsp; While Cattaneo et al. (2009) do not clearly state their assumption of linearity, by utilizing linear models throughout their study, they imply that the dependent variables listed in the tables below are able to be explained by features regarding Piso Firme treatment, age, demographics, and health-habits through a linear relationship. 
 
-&emsp; 2. Independence <br>
+2. Independence <br>
 > The response variable Y is independent of the residuals $\epsilon \;$:
 $$cov
 \begin{pmatrix}
@@ -44,9 +44,8 @@ $$cov
 \begin{pmatrix}
 H & 0_{nxn} \\
 0_{nxn} & I_n - H 
-\end{pmatrix} $$ 
-
-&emsp;&emsp; The paper also assumes that there is no spatial autocorrelation present between the clusters in which they sampled their data. However, they assume that there is correlation within the clusters. This assumption is valid as they prove in their robustness checks that the error terms of the models were not correlated across clusters and hence they are justified in their use of this clustering structure.
+\end{pmatrix} $$ <br>
+< &emsp;&emsp; The paper also assumes that there is no spatial autocorrelation present between the clusters in which they sampled their data. However, they assume that there is correlation within the clusters. This assumption is valid as they prove in their robustness checks that the error terms of the models were not correlated across clusters and hence they are justified in their use of this clustering structure.
 
 3. Normality <br>
 > The residuals $\epsilon$ are normally distributed: $\epsilon \sim N(0, \sigma^2 I_n)$ or $\epsilon_i \overset{\text{iid}}{\sim} N(0, \sigma^2)$ where  $\sigma^2$ is an unknown parameter. 
