@@ -48,23 +48,24 @@ H & 0_{nxn} \\
 
 &emsp;&emsp; The paper also assumes that there is no spatial autocorrelation present between the clusters in which they sampled their data. However, they assume that there is correlation within the clusters. This assumption is valid as they prove in their robustness checks that the error terms of the models were not correlated across clusters and hence they are justified in their use of this clustering structure.
 
-3. Normality <br>
-&emsp;&emsp;&emsp; <blockquote> The residuals $\epsilon$ are normally distributed: $\epsilon \sim N(0, \sigma^2 I_n)$ or $\epsilon_i \overset{\text{iid}}{\sim} N(0, \sigma^2)$ where  $\sigma^2$ is an unknown parameter. </blockquote> &emsp;&emsp; This assumption of normality can be validated by confirming that the observations are near the line of a normal probability plot or by verifying that the histogram of the residuals resembles a normal distribution. However, this paper does not explicitly address the assumption of normality. 
+- Normality <br>
+> The residuals $\epsilon$ are normally distributed: $\epsilon \sim N(0, \sigma^2 I_n)$ or $\epsilon_i \overset{\text{iid}}{\sim} N(0, \sigma^2)$ where  $\sigma^2$ is an unknown parameter. 
 
-4. Homoskedasticity <br>
+&emsp;&emsp; This assumption of normality can be validated by confirming that the observations are near the line of a normal probability plot or by verifying that the histogram of the residuals resembles a normal distribution. However, this paper does not explicitly address the assumption of normality. 
+
+- Homoskedasticity <br>
 > The residuals $\epsilon$ have the same constant variance $\sigma^2$: $$cov(\epsilon) = \sigma^2 I_n$$  
-
 
 &emsp;&emsp; Cattaneo et al. (2009) do not assume homoskedasticity, since they use robust clustered standard errors. They are instead assuming that the census block clusters have different variances.
  
  <br>
 
 Treatment Effect Heterogeneity (or Difference-in-Difference) Assumptions:
-1. We can formulate the problem in terms of linear regression $y_i = \beta_0 + \beta_1 z_i + \beta_2^T x_i + \beta_3^T x_i z_i + \epsilon_i$ where $y_i$ is the dependent variable, $x_i$ are the covariates, and $z_i$ is the binary treatment variable.
+- We can formulate the problem in terms of linear regression $y_i = \beta_0 + \beta_1 z_i + \beta_2^T x_i + \beta_3^T x_i z_i + \epsilon_i$ where $y_i$ is the dependent variable, $x_i$ are the covariates, and $z_i$ is the binary treatment variable.
 
-2. The control group acts as a proper counterfactual for the treatment group. 
+-The control group acts as a proper counterfactual for the treatment group. 
 
-3. Trends in the treatment group and control group would have been the same in the absence of treatment.
+- Trends in the treatment group and control group would have been the same in the absence of treatment.
 
 &emsp;&nbsp; By restricting the sampling to similar socioeconomic and geographical locations and implementing a consistent eligibility criteria on all surveyed households, the paper confirms that the treatment and control groups act as appropriate comparisons for one another with respect to the observed features. 
 
