@@ -63,7 +63,7 @@ H & 0_{nxn} \\
 Treatment Effect Heterogeneity (or Difference-in-Difference) Assumptions:
 - We can formulate the problem in terms of linear regression $y_i = \beta_0 + \beta_1 z_i + \beta_2^T x_i + \beta_3^T x_i z_i + \epsilon_i$ where $y_i$ is the dependent variable, $x_i$ are the covariates, and $z_i$ is the binary treatment variable.
 
--The control group acts as a proper counterfactual for the treatment group. 
+- The control group acts as a proper counterfactual for the treatment group. 
 
 - Trends in the treatment group and control group would have been the same in the absence of treatment.
 
