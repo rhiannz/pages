@@ -16,9 +16,11 @@ All code for this project can be found on the GitHub repository:
 
 Hello, today our research group, Christopher, Edgar, Joshua, and myself - led by Michael and Jade, will talking about Persistent Homology and how we used it to study different typing patterns. 
 
-<center><img src="/images/ph_0th-2.png" alt="drawing" width="700"/></center>
+<center><img src="/images/ph_0th-2.gif" alt="drawing" width="700"/></center>
 
 We will be covering the background information behind Persistent Homology, the research itself and the code we used to study different typing patterns, and the results we found. 
+
+<center><img src="/images/ph_0th-2.gif" width="700"/></center>
 
 So, generally, Persistent Homology can be defined as an algebraic method for discerning topological features of a space created from a data set
 Examples of topological features are Connected components, Loops, Voids, and Simplicial Structures,
