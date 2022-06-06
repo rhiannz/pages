@@ -7,9 +7,20 @@ author_profile: true
 
 {% include base_path %}
 
-# Research Assistant in Persistent Homology 
+# Research in Persistent Homology  
 
-<a href="https://www.google.com/" style="color: black; text-decoration: none;">custom link</a>
+![](ph_cover)
+
+All code for this project can be found on the GitHub repository: 
+<a href="https://github.com/edgarlepe/Persistence/tree/master/Project" style="color: blue; text-decoration: none;">GitHub</a>.
+
+
+# Research in Persistent Homology 
+
+![](ph2_cover)
+
+All code for this project can be found on the GitHub repository: 
+<a href="https://github.com/edgarlepe/Persistence/tree/master/Project" style="color: blue; text-decoration: none;">GitHub</a>.
 
 
 {% for post in site.research %}
