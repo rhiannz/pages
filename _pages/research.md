@@ -22,7 +22,7 @@ Some examples of topological features are connected components, loops, voids, an
 
 Let us first consider this point cloud that consists of 19 points in a plane:  
 
-<center><img src="/images/ph_cloud.png" width="700"/></center>
+<center><img src="/images/ph_cloud.png" width="600"/></center>
 
 We can see that this data seems to have a general “loop” shape. But how can we quantify the fact that this has a “loop shape”? This is where Persistent Homology comes in. 
  
@@ -31,14 +31,14 @@ With 0th Persistent Homology, we have balls or spheres simultaneously growing ar
 And as the balls are intersecting, they are forming and merging **connected components**. 
 This process can be seen more clearly with this diagram, where different colors are assigned to different connected components. 
 
-<center><img src="/images/ph_connected.png" width="400"/></center>
+<center><img src="/images/ph_connected.gif" width="400"/></center>
 
 When a ball in one connected component first touches a ball from a different one, the connected components merge and become one bigger connected component. 
 **0th Persistent Homology** is the tracking of these connected components. 
  
 So, with the previous point cloud, we can see how the balls grow to a diameter of $d$, which is the point when the balls all intersect and merge into one connected component. 
 
-<center><img src="/images/ph_0th.png" width="700"/></center>
+<center><img src="/images/ph_0th.gif" width="700"/></center>
  
 As we move forward, it is important to note that *the nth homology is quantifying or keeping track of n+1 dimensional holes*. 
 
@@ -48,7 +48,7 @@ As the balls continue to grow, the white space decreases and eventually disappea
 However, as the balls grow, a larger loop is also born (seen in third figure) which  eventually dies as well. 
 
 <center><img src="/images/ph_holes.png" width="700"/></center>
-<center><img src="/images/ph_1st.png" width="700"/></center>
+<center><img src="/images/ph_1st.gif" width="700"/></center>
 
 With **2nd Persistent Homology**, we are keeping track of *voids* or *cavities* which also are born and die as the spheres around each point grow. 
 
@@ -76,7 +76,7 @@ and triangular faces. Homology keeps track of the loops and voids present within
 Now, returning to our original point cloud and applying the simplices, we have this diagram which shows the simplicial complex changing as the balls grow. 
 The simplicial complex allows us to identify and quantify where the holes are computationally. 
 
-<center><img src="/images/ph_simpcompcloud.png" width="700"/></center>
+<center><img src="/images/ph_simpcompcloud.gif" width="700"/></center>
 
 However, we still need to determine the appropriate distance $d$ at which our simplicial complex contains siginficant features. As seen below, when $d$ is too small, we are only detecting noise and when we choose a $d$ that is too large, we end up with a giant simplex displaying a trivial homology. 
 
@@ -84,11 +84,11 @@ However, we still need to determine the appropriate distance $d$ at which our si
 
 This is where the idea of *persistence* comes in. In particular, we are interesting in studying the birth time and death time of the holes and voids in our simplicial complexes. In the example below, we can see how the barcode on the graph is tracking the distances $d$ at which a loop is born, continuing while it is present, and ending upon the loop's death. 
 
-<center><img src="/images/ph_birthdeath.png" width="700"/></center>
+<center><img src="/images/ph_birthdeath.png" width="600"/></center>
 
 Now, we can see how this applies to our original point cloud, as the general loop shape shows up in the barcode as the most persistence feature of our data while smaller loops are shown to be less significant and can be deemed as noise. 
 
-<center><img src="/images/ph_barcodes.png" width="700"/></center>
+<center><img src="/images/ph_barcodes.gif" width="700"/></center>
 
 We can then continue on and introduce **bottleneck distances** which is the distance between barcodes. These are used as a way to measure/compare different barcodes. 
 
