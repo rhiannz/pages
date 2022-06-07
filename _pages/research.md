@@ -13,8 +13,7 @@ This research project utilizes persistent homology to examine student typing dat
 
 The following report will explain the general background information behind Persistent Homology, the code used to study different typing patterns, and the results we found. 
 
-All code for this project can be found on the GitHub repository: 
-<a href="https://github.com/rhiannz/Persistence/tree/master/Project" style="color: blue; text-decoration: none;">https://github.com/rhiannz/Persistence/tree/master/Project</a>.
+All code for this project can be found on the following <a href="https://github.com/rhiannz/Persistence/tree/master/Project" style="color: blue; text-decoration: none;">GitHub repository</a>. 
 
 ## What is Persistent Homology?
 
@@ -70,22 +69,32 @@ A solid tetrahedron is a *three-dimensional simples*.
 And this pattern continues as we go higher in dimensions. 
 
 Moreover, if we put together simplices together in a way that the intersection between any two simplices is also a simplex, we obtain a **simplicial complex**, which you can see an example of below. Hence, simplicial complexes are built from points, lines, 
-and triangular faces. 
+and triangular faces. Homology keeps track of the loops and voids present within our simplicial complexes. 
 
-<center><img src="/images/ph_simpcomp.png" width="450"/></center>
-
+<center><img src="/images/ph_simpcomp.png" width="200"/><img src="/images/ph_homology.png" width="400"/></center>
 
 Now, returning to our original point cloud and applying the simplices, we have this diagram which shows the simplicial complex changing as the balls grow. 
 The simplicial complex allows us to identify and quantify where the holes are computationally. 
 
+<center><img src="/images/ph_simpcompcloud.png" width="700"/></center>
 
+However, we still need to determine the appropriate distance $d$ at which our simplicial complex contains siginficant features. As seen below, when $d$ is too small, we are only detecting noise and when we choose a $d$ that is too large, we end up with a giant simplex displaying a trivial homology. 
 
+<center><img src="/images/ph_choosingd.png" width="700"/></center>
+
+This is where the idea of *persistence* comes in. In particular, we are interesting in studying the birth time and death time of the holes and voids in our simplicial complexes. In the example below, we can see how the barcode on the graph is tracking the distances $d$ at which a loop is born, continuing while it is present, and ending upon the loop's death. 
+
+<center><img src="/images/ph_birthdeath.png" width="700"/></center>
+
+Now, we can see how this applies to our original point cloud, as the general loop shape shows up in the barcode as the most persistence feature of our data while smaller loops are shown to be less significant and can be deemed as noise. 
+
+<center><img src="/images/ph_barcodes.png" width="700"/></center>
+
+We can then continue on and introduce **bottleneck distances** which is the distance between barcodes. These are used as a way to measure/compare different barcodes. 
 
 
 Of course, as our dimensions grow, it becomes increasingly difficult to create clear visualizations of our data. 
-However, we can still do the computations, because we have Persistent Homology keeping track of the loops and voids within our simplicial complexes and data. 
-
-
+However, we are still able to carry out the computations because we can use Persistent Homology to quantify the features of our data. 
 
 
 
