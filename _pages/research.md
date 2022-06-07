@@ -104,3 +104,19 @@ However, we are still able to carry out the computations because we can use Pers
 {% for post in site.research %}
   {% include archive-single.html %}
 {% endfor %}
+
+
+    
+<p style="color:gray;font-weight:200;font-size:13px;line-height:2"> 
+    <font size="+1">References</font><br>
+ &emsp; 1.  Title image created from Kolosov, K. (2022). Side view of faceless female typing on laptop sitting by table in evening in dark. Shutterstock. https://www.shutterstock.com/video/clip-22414081-side-view-faceless-female-typing-on-laptop
+ <br>
+ &emsp; 2. Images and Gifs from "What is Persistent Homology?" Section are created from: 
+ &emsp;&emsp; i. Introduction to Persistent Homology. (2015, July 3). [Video]. YouTube. https://www.youtube.com/watch?v=h0bnG1Wavag&t=377s&ab_channel=MatthewWright 
+ <br>
+ &emsp;&emsp; ii. Koplik, G. (2022, May 30). Persistent Homology: A Non-Mathy Introduction with Examples. Medium. https://towardsdatascience.com/persistent-homology-with-examples-1974d4b9c3d0
+ <br>
+ &emsp;&emsp; iii. Xu, X., Cisewski-Kehe, J., Green, S., & Nagai, D. (2019). Finding cosmic voids and filament loops using topological data analysis. Astronomy and Computing, 27, 34–52. https://doi.org/10.1016/j.ascom.2019.02.003
+    
+</p>
+
