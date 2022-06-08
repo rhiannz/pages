@@ -100,31 +100,52 @@ Now that we have covered the basics of persistent homology, we can use this meth
 
 Throughout this section, we will be using the [Keystoke Dynamics - Benchamrk Data Set](https://www.cs.cmu.edu/~keystroke/) which contains a little over 20,000 rows. Each test subject has 8 typing sessions consisting of 50 repititions in which they retype passwords. The data details how long each key pressed down for as well as the time between the pressing of each key. 
 
-We began by preprocessing the data so that we can generate a persistence diagram for each typing session. To do this, we group the typing data by test subject and store it in a list. We also create list that contains the corresponding labels. In order to get better results, we shuffle the data before splitting each test subject's typing data and labels into the 8 sessions. We then generated a persistence diagram for each typing session and extracted the persistence intervals in the specified dimensions We generated our training and testing data. 
+We began by preprocessing the data so that we can generate a persistence diagram for each typing session. To do this, we group the typing data by test subject and store it in a list. We also create list that contains the corresponding labels. In order to get better results, we shuffle the data before splitting each test subject's typing data and labels into the 8 sessions. We then created a persistence diagram for each typing session,  extracted the persistence intervals in the specified dimensions, and generated our training and testing data. 
 
 Next, we created Vietoris-Rips complexes and their respective simplex trees for each subject's typing data, and then we calculate the persistence. Due to our hardware limitations, we only compute the first three homologies at a maximum edge length of 0.8.
 
-Now we plot the persistence diagrams. As you can see form the legend in the diagrams, the red dots represent the 0th homology, the blue dots represent the 1st homology, and the green dots represent the 2nd homology.
+Now we plot the persistence diagrams of four selected test subjects which we have named for easy comparison. As you can see form the legend in the diagrams, the red dots represent the 0th homology, the blue dots represent the 1st homology, and the green dots represent the 2nd homology. 
+
+<center><img src="/images/ph_diagrams1.png" width="450"/></center>
+<center><img src="/images/ph_diagrams2.png" width="450"/></center>
+
+We can also compare the barcode diagrams of our selected test subjects down below. 
+
+<center><img src="/images/ph_barcodes1.png" width="450"/></center>
+<center><img src="/images/ph_barcodes2.png" width="450"/></center>
+
+We can see that . 
+
+
+We also compare the bottleneck distances between each of our selected subjects in terms of the 0th, 1st, and 2nd homology. 
+
+<center><img src="/images/ph_table0.png" width="150"/><img src="/images/ph_table1.png" width="150"/><img src="/images/ph_table2.png" width="150"/></center>
+
+Across all different homologies, each subject has the smallest bottleneck distances with themselves by far. These bottleneck distances also span a similar, small range across each homology and subject as well. This indicates that there are significant and detectable differences between each of the individual test subjects typing patterns. 
+
+
 
 
 Below are the first four diagrams for subject `s002`. While they vary quite a bit, we should note that the first and fourth diagrams are quite similar.
 
-
-
 Next, we optimize our hyperparameters using a grid search algorithm and train our model using the Bottleneck distance metric. First, we only keep the finite from our persistence intervals using the DiagramSelector. Then we vary the epsilon (which here represents the absolute error tolerated on the distance), n_neighbors (which represents the number of neighbors our K Nearest Neighbors Classifier uses), weights (which represent the how the nearest neighbors are weighted), and p (which represents the power for the Minkowski metric, 1 for Manhattan distance and 2 for Euclidean distance).
 
-<center><img src="/images/ph_diagrams.png" width="450"/></center>
 
 Below is the optimized hyperparameter set found by our grid search algorithm.
-{'Estimator__n_neighbors': 3,
+
+<pre>
+ 'Estimator__n_neighbors': 3,
  'Estimator__p': 1,
  'Estimator__weights': 'distance',
  'Scaler__use': False,
- 'TDA__epsilon': 0.001}
+ 'TDA__epsilon': 0.001
+</pre>
 
 
+<pre>
 Bottleneck distance trainig accuracy	= 100.0%
 Bottleneck distance prediction accuracy	= 9.803921568627452%
+</pre>
 
     
 <p style="color:gray;font-weight:200;font-size:13px;line-height:2"> 
