@@ -106,22 +106,22 @@ Next, we created Vietoris-Rips complexes and their respective simplex trees for 
 
 Now we plot the persistence diagrams of four selected test subjects which we have named for easy comparison. As you can see form the legend in the diagrams, the red dots represent the 0th homology, the blue dots represent the 1st homology, and the green dots represent the 2nd homology. 
 
-<center><img src="/images/ph_diagrams1.png" width="600"/></center>
-<center><img src="/images/ph_diagrams2.png" width="600"/></center>
+<center><img src="/images/ph_diagrams1.png" width="700"/></center>
+<center><img src="/images/ph_diagrams2.png" width="700"/></center>
 
 We can also compare the barcode diagrams of our selected test subjects down below. 
 
-<center><img src="/images/ph_barcodes1.png" width="600"/></center>
-<center><img src="/images/ph_barcodes2.png" width="600"/></center>
+<center><img src="/images/ph_barcodes1.png" width="700"/></center>
+<center><img src="/images/ph_barcodes2.png" width="700"/></center>
 
 We can see that . 
 
 
 We also compare the bottleneck distances between each of our selected subjects in terms of the 0th, 1st, and 2nd homology. 
 
-<center><img src="/images/ph_table0.png" width="250"/><img src="/images/ph_table1.png" width="250"/><img src="/images/ph_table2.png" width="250"/></center>
+<center><img src="/images/ph_table0.png" width="300"/><img src="/images/ph_table1.png" width="300"/><img src="/images/ph_table2.png" width="300"/></center>
 
-Across all different homologies, each subject has the smallest bottleneck distances with themselves by far. These bottleneck distances also span a similar, small range across each homology and subject as well. This indicates that there are significant and detectable differences between each of the individual test subjects typing patterns. 
+Across all different homologies, each subject has the smallest bottleneck distances with themselves by far. These bottleneck distances also span a small range as well. This indicates that there are significant and detectable differences between each of the individual test subjects typing patterns. 
 
 
 
