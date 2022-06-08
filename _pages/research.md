@@ -98,7 +98,7 @@ However, we are still able to carry out the computations because we can use Pers
 
 Now that we have covered the basics of persistent homology, we can use this method of topological data analysis to examine student typing data and investigate possible trends of academic misconduct. More specifically, we will be calculating persistence diagrams for all the test subjects in the study, and then identifying each subject using the bottleneck distance of their respective persistence diagrams. 
 
-Throughout this section, we will be using the [Keystoke Dynamics - Benchamrk Data Set](https://www.cs.cmu.edu/~keystroke/) which contains a little over 20,000 rows. Each test subject has 8 typing sessions consisting of 50 repititions in which they retype passwords. The data details how long each key pressed down for as well as the time between the pressing of each key. 
+Throughout this section, we will be using the [Keystroke Dynamics - Benchmark Data Set](https://www.cs.cmu.edu/~keystroke/) which contains a little over 20,000 rows. Each test subject has 8 typing sessions consisting of 50 repititions in which they retype passwords. The data details how long each key pressed down for as well as the time between the pressing of each key. 
 
 We began by preprocessing the data so that we can generate a persistence diagram for each typing session. To do this, we group the typing data by test subject and store it in a list. We also create list that contains the corresponding labels. In order to get better results, we shuffle the data before splitting each test subject's typing data and labels into the 8 sessions. We then created a persistence diagram for each typing session,  extracted the persistence intervals in the specified dimensions, and generated our training and testing data. 
 
@@ -106,20 +106,20 @@ Next, we created Vietoris-Rips complexes and their respective simplex trees for 
 
 Now we plot the persistence diagrams of four selected test subjects which we have named for easy comparison. As you can see form the legend in the diagrams, the red dots represent the 0th homology, the blue dots represent the 1st homology, and the green dots represent the 2nd homology. 
 
-<center><img src="/images/ph_diagrams1.png" width="450"/></center>
-<center><img src="/images/ph_diagrams2.png" width="450"/></center>
+<center><img src="/images/ph_diagrams1.png" width="600"/></center>
+<center><img src="/images/ph_diagrams2.png" width="600"/></center>
 
 We can also compare the barcode diagrams of our selected test subjects down below. 
 
-<center><img src="/images/ph_barcodes1.png" width="450"/></center>
-<center><img src="/images/ph_barcodes2.png" width="450"/></center>
+<center><img src="/images/ph_barcodes1.png" width="600"/></center>
+<center><img src="/images/ph_barcodes2.png" width="600"/></center>
 
 We can see that . 
 
 
 We also compare the bottleneck distances between each of our selected subjects in terms of the 0th, 1st, and 2nd homology. 
 
-<center><img src="/images/ph_table0.png" width="150"/><img src="/images/ph_table1.png" width="150"/><img src="/images/ph_table2.png" width="150"/></center>
+<center><img src="/images/ph_table0.png" width="250"/><img src="/images/ph_table1.png" width="250"/><img src="/images/ph_table2.png" width="250"/></center>
 
 Across all different homologies, each subject has the smallest bottleneck distances with themselves by far. These bottleneck distances also span a similar, small range across each homology and subject as well. This indicates that there are significant and detectable differences between each of the individual test subjects typing patterns. 
 
