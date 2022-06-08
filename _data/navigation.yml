@@ -9,9 +9,7 @@ main:
   - title: "Research Experience"
     url: /research/ 
   
-  - title: "Education"
-    url: /teaching/
-    
-  - title: "Interests"
-    url: /markdown/
+  - title: "About"
+    url: /about_me/
+ 
   
