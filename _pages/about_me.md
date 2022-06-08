@@ -15,7 +15,7 @@ author_profile: true
 
 # Contact
 
-Email: `rhiannzhang@gmail.com`
+Email: <pre>rhiannzhang@gmail.com</pre>
 
 {% for post in site.about_me %}
   {% include archive-single.html %}
