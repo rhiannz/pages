@@ -68,5 +68,5 @@ This research project utilizes persistent homology to examine student typing dat
 <br> 
 
 # Resume 
-<embed src='/images/Resume.pdf' width="370" height="440">
+<embed src='/images/Resume.pdf' width="370" height="460">
 
