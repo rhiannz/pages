@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-<a style="font-size:11px">
+<p style="font-size: 14px">
   Hello! I am actively looking for a full-time job in a data-oriented role. As a recent graduate of the UC Berkeley MA Statistics program, I am trained in modern statistical and machine learning methods and have an undergraduate background in mathematics. I also have experience with languages and software such as Python, R, and SQL. I look forward to any opportunities to grow and contribute to others! Feel free to check out some of the things I have worked on below : )
-</a>
+</p>
 
 <hr/>
 <br>
@@ -22,6 +22,7 @@ redirect_from:
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/"><img src='/images/overdose_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
 Throughout the years, there has been a dramatic increase in drug overdoses. We are currently at the point where overdoses are the cause of more deaths than car accidents, guns, or HIV. Since 1999, there have been about 1 million fatal overdoses in the United States and just within the past year, over 100,000 have lost their lives due to overdose...
+
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 <hr/>
@@ -41,6 +42,7 @@ Every year, millions of students take AP Exams in over 30 different subjects. Th
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/"><img src='/images/hhh_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
 The paper concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on...
+
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 <hr/>
@@ -50,6 +52,7 @@ The paper concerns the impact of Piso Firme, a program that provided resources f
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/"><img src='/images/ga_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
 In this project, we created a R package implementing genetic algorithms for variable selection in regression problems, including both linear regression and GLMs. We allow users to choose their own fitness functions and by default it’s AIC. Several genetic operators, such as crossover and mutation are combined into...
+
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 <hr/>
