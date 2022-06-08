@@ -63,7 +63,7 @@ In this project, we created a R package implementing genetic algorithms for vari
 
 <a href="https://rhiannz.github.io//research/"><img src='/images/ph_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
-This research project utilizes persistent homology to examine student typing data collected from online proctoring sites and identify trends indicating academic misconduct. Topological data analysis is applied to evaluate the algebraic facets of the persistence of holes in a given space and display high dimensional data trends. The following report will explain...
+This research project utilizes persistent homology to examine student typing data collected from online proctoring sites and identify trends indicating academic misconduct. Topological data analysis is applied to evaluate the algebraic facets of the persistence of holes in a given space and display high dimensional data trends. The following...
 
 <a href="https://rhiannz.github.io//research/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
