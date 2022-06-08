@@ -11,6 +11,7 @@ redirect_from:
 Hello! I am actively looking for a job as data analyst. As a recent graduate of the UC Berkeley MA Statistics program, I am looking forward to opportunities to grow and contribute to others! Feel free to check out some of the projects I have done : )
 
 <hr/>
+<br>
 
 # Projects 
 
