@@ -15,7 +15,7 @@ author_profile: true
 
 # Contact
 
-Email: <pre>rhiannzhang@gmail.com</pre>
+Email: <p style = "font-family:'Courier New',monospace;">rhiannzhang@gmail.com</p>
 
 {% for post in site.about_me %}
   {% include archive-single.html %}
