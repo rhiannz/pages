@@ -89,15 +89,14 @@ Now, we can see how this applies to our original point cloud, as the general loo
 
 <center><img src="/images/ph_barcodes.gif" width="600"/></center>
 
-We can then continue on and introduce **bottleneck distances** which is the distance between barcodes. These are used as a way to measure/compare different barcodes. 
-
+Moreover, **bottleneck distances** are the distances between barcodes which we will be using to measure/compare different barcodes. 
 
 Of course, as our dimensions grow, it becomes increasingly difficult to create clear visualizations of our data. 
 However, we are still able to carry out the computations because we can use Persistent Homology to quantify the features of our data. 
 
+## Identifying Keyboard Users Using Persistent Homology 
 
-
-
+Now that we have covered the basics of persistent homology, we can use this method of topological data analysis to examine student typing data and investigate possible trends of academic misconduct. More specifically, we will be calculating persistence diagrams for all the test subjects in the study, and then identifying each subject using the bottleneck distance of their respective persistence diagrams
 
 
 {% for post in site.research %}
