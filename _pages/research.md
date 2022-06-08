@@ -70,16 +70,16 @@ And this pattern continues as we go higher in dimensions.
 Moreover, if we put together simplices together in a way that the intersection between any two simplices is also a simplex, we obtain a **simplicial complex**, which you can see an example of below. Hence, simplicial complexes are built from points, lines, 
 and triangular faces. Homology keeps track of the loops and voids present within our simplicial complexes. 
 
-<center><img src="/images/ph_simpcomp.png" width="150"/>&emsp;&emsp;&emsp;&emsp;<img src="/images/ph_homology.png" width="280"/></center>
+<center><img src="/images/ph_simpcomp.png" width="150"/>&emsp;&emsp;&emsp;&emsp;&emsp;<img src="/images/ph_homology.png" width="280"/></center>
 
 Now, returning to our original point cloud and applying the simplices, we have this diagram which shows the simplicial complex changing as the balls grow. 
 The simplicial complex allows us to identify and quantify where the holes are computationally. 
 
-<center><img src="/images/ph_simpcompcloud.gif" width="500"/></center>
+<center><img src="/images/ph_simpcompcloud.gif" width="450"/></center>
 
 However, we still need to determine the appropriate distance $d$ at which our simplicial complex contains siginficant features. As seen below, when $d$ is too small, we are only detecting noise and when we choose a $d$ that is too large, we end up with a giant simplex displaying a trivial homology. 
 
-<center><img src="/images/ph_choosingd.png" width="600"/></center>
+<center><img src="/images/ph_choosingd.png" width="700"/></center>
 
 This is where the idea of *persistence* comes in. In particular, we are interesting in studying the birth time and death time of the holes and voids in our simplicial complexes. In the example below, we can see how the barcode on the graph is tracking the distances $d$ at which a loop is born, continuing while it is present, and ending upon the loop's death. 
 
