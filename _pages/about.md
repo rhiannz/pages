@@ -50,6 +50,9 @@ In this project, we created a R package implementing genetic algorithms for vari
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
+<hr/>
+
+<br>
 
 # Research Experience 
 
@@ -61,7 +64,9 @@ This research project utilizes persistent homology to examine student typing dat
 
 <a href="https://rhiannz.github.io//research/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
+<hr/>
+<br> 
 
 # Resume 
-<embed src='/images/Resume.pdf' width="350" height="420">
+<embed src='/images/Resume.pdf' width="370" height="440">
 
