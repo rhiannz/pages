@@ -15,7 +15,6 @@ author_profile: true
 
 # Contact
 
-`Email`: rhiannzhang@gmail.com 
 Email: `rhiannzhang@gmail.com`
 
 {% for post in site.about_me %}
