@@ -22,7 +22,7 @@ Some examples of topological features are connected components, loops, voids, an
 
 Let us first consider this point cloud that consists of 19 points in a plane:  
 
-<center><img src="/images/ph_cloud.png" width="500"/></center>
+<center><img src="/images/ph_cloud.png" width="400"/></center>
 
 We can see that this data seems to have a general “loop” shape. But how can we quantify the fact that this has a “loop shape”? This is where Persistent Homology comes in. 
  
@@ -31,14 +31,14 @@ With 0th Persistent Homology, we have balls or spheres simultaneously growing ar
 And as the balls are intersecting, they are forming and merging **connected components**. 
 This process can be seen more clearly with this diagram, where different colors are assigned to different connected components. 
 
-<center><img src="/images/ph_connected.gif" width="250"/></center>
+<center><img src="/images/ph_connected.gif" width="200"/></center>
 
 When a ball in one connected component first touches a ball from a different one, the connected components merge and become one bigger connected component. 
 **0th Persistent Homology** is the tracking of these connected components. 
  
 So, with the previous point cloud, we can see how the balls grow to a diameter of $d$, which is the point when the balls all intersect and merge into one connected component. 
 
-<center><img src="/images/ph_0th.gif" width="600"/></center>
+<center><img src="/images/ph_0th.gif" width="400"/></center>
  
 As we move forward, it is important to note that *the nth homology is quantifying or keeping track of n+1 dimensional holes*. 
 
@@ -53,13 +53,13 @@ However, as the balls grow, a larger loop is also born (seen in third figure) wh
 With **2nd Persistent Homology**, we are keeping track of *voids* or *cavities* which also are born and die as the spheres around each point grow. 
 You can see an example of voids in this diagram: 
 
-<center><img src="/images/ph_2nd.png" width="550"/></center>
+<center><img src="/images/ph_2nd.png" width="350"/></center>
 
 In simpler terms, we can think of homology as counting these connected components, holes, and voids. 
 But with the figures shown so far, we still are not able to properly compute or quantify anything. 
 So, we introduce **simplices**. 
 
-<center><img src="/images/ph_simplexes.png" width="500"/></center>
+<center><img src="/images/ph_simplexes.png" width="400"/></center>
 
 Starting with a *zero-dimensional simplex*, we have a point. 
 Next, an edge between two points is a *one-dimensional simplex*.
@@ -70,20 +70,20 @@ And this pattern continues as we go higher in dimensions.
 Moreover, if we put together simplices together in a way that the intersection between any two simplices is also a simplex, we obtain a **simplicial complex**, which you can see an example of below. Hence, simplicial complexes are built from points, lines, 
 and triangular faces. Homology keeps track of the loops and voids present within our simplicial complexes. 
 
-<center><img src="/images/ph_simpcomp.png" width="100"/>&emsp;&emsp;&emsp;<img src="/images/ph_homology.png" width="250"/></center>
+<center><img src="/images/ph_simpcomp.png" width="150"/>&emsp;&emsp;&emsp;&emsp;<img src="/images/ph_homology.png" width="280"/></center>
 
 Now, returning to our original point cloud and applying the simplices, we have this diagram which shows the simplicial complex changing as the balls grow. 
 The simplicial complex allows us to identify and quantify where the holes are computationally. 
 
-<center><img src="/images/ph_simpcompcloud.gif" width="700"/></center>
+<center><img src="/images/ph_simpcompcloud.gif" width="500"/></center>
 
 However, we still need to determine the appropriate distance $d$ at which our simplicial complex contains siginficant features. As seen below, when $d$ is too small, we are only detecting noise and when we choose a $d$ that is too large, we end up with a giant simplex displaying a trivial homology. 
 
-<center><img src="/images/ph_choosingd.png" width="500"/></center>
+<center><img src="/images/ph_choosingd.png" width="600"/></center>
 
 This is where the idea of *persistence* comes in. In particular, we are interesting in studying the birth time and death time of the holes and voids in our simplicial complexes. In the example below, we can see how the barcode on the graph is tracking the distances $d$ at which a loop is born, continuing while it is present, and ending upon the loop's death. 
 
-<center><img src="/images/ph_birthdeath.png" width="500"/></center>
+<center><img src="/images/ph_birthdeath.png" width="450"/></center>
 
 Now, we can see how this applies to our original point cloud, as the general loop shape shows up in the barcode as the most persistence feature of our data while smaller loops are shown to be less significant and can be deemed as noise. 
 
