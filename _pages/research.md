@@ -96,7 +96,9 @@ However, we are still able to carry out the computations because we can use Pers
 
 ## Identifying Keyboard Users Using Persistent Homology 
 
-Now that we have covered the basics of persistent homology, we can use this method of topological data analysis to examine student typing data and investigate possible trends of academic misconduct. More specifically, we will be calculating persistence diagrams for all the test subjects in the study, and then identifying each subject using the bottleneck distance of their respective persistence diagrams
+Now that we have covered the basics of persistent homology, we can use this method of topological data analysis to examine student typing data and investigate possible trends of academic misconduct. More specifically, we will be calculating persistence diagrams for all the test subjects in the study, and then identifying each subject using the bottleneck distance of their respective persistence diagrams. 
+
+The main dataset used in this study was extracted from using the 
 
 
 {% for post in site.research %}
