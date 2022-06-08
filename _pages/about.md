@@ -10,6 +10,8 @@ redirect_from:
 
 Hello! I am actively looking for a job as data analyst. As a recent graduate of the UC Berkeley MA Statistics program, I am looking forward to opportunities to grow and contribute to others! Feel free to check out some of the projects I have done : )
 
+<hr/>
+
 # Projects 
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-1/" style="font-size: 38px; color: black; text-decoration: none;">Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic</a>
@@ -32,7 +34,7 @@ Every year, millions of students take AP Exams in over 30 different subjects. Th
 
 <hr/>
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 36px; color: black; text-decoration: none;">Replication of “Piso Firme” Program Impact Investigation</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 38px; color: black; text-decoration: none;">Replication of “Piso Firme” Program Impact Investigation</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/"><img src='/images/hhh_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -52,11 +54,9 @@ In this project, we created a R package implementing genetic algorithms for vari
 
 <hr/>
 
-<br>
-
 # Research Experience 
 
-<a href="https://rhiannz.github.io//research/" style="font-size: 42px; color: black; text-decoration: none;">Persistent Homology and Student Typing Patterns</a>
+<a href="https://rhiannz.github.io//research/" style="font-size: 38px; color: black; text-decoration: none;">Persistent Homology and Student Typing Patterns</a>
 
 <a href="https://rhiannz.github.io//research/"><img src='/images/ph_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -65,7 +65,6 @@ This research project utilizes persistent homology to examine student typing dat
 <a href="https://rhiannz.github.io//research/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 <hr/>
-<br> 
 
 # Resume 
 <embed src='/images/Resume.pdf' width="370" height="460">
