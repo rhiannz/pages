@@ -15,8 +15,7 @@ and by default it’s AIC. Several genetic operators, such as crossover and muta
 whole selection process. We test all of our functions using different datasets and criteria. The results
 implementing our package on the Boston dataset are shown below.
 
-All code for this project can be found in GitHub repository: 
-<a href="https://github.com/rhiannz/genetic-selectR" style="color: steelblue; text-decoration: none;">https://github.com/rhiannz/genetic-selectR</a>
+All code for this project can be found in this <a href="https://github.com/rhiannz/genetic-selectR" style="color: steelblue; text-decoration: none;">GitHub repository</a>.
 
 ## II Algorithms
 In order to implement this genetic selection algorithm, we partitioned each step of the algorithm into separate
