@@ -1,3 +1,9 @@
+---
+title: "Geospatial Explanatory Modeling of the U.S. Drug Overdose Epidemic"
+excerpt: "<img src='/images/overdose_cover.png'><br/><br/>Short description of portfolio item number 2"
+collection: about_me 
+---
+
 <?php
 if (isset($_POST['Email'])) {
 
