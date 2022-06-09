@@ -86,46 +86,6 @@ After exploring our baseline model, we performed a backward selection to determi
 
 &emsp;&emsp;Table 2. Description of Features Found from Backward Stepwise Feature Selection 
 
-<table style="width:80%">
-    <tr>
-        <td>Feature Name</td>
-        <td>Description</td>
-    </tr>
-    <tr>
-        <td>`Spatial_Mean`</td>
-        <td>the average overdose rate of counties adjacent to the focal county</td>
-    </tr>
-    <tr>
-        <td>`PrimCarePhys_per_100k`</td>
-        <td>the number of primary care physicians per 100k residents</td>
-    </tr>
-    <tr>
-        <td>`Pct_Uninsured`</td>
-        <td>the percentage of uninsured residents</td>
-    </tr>
-    <tr>
-        <td>`Pct_Child_in_1ParentHH1`</td>
-        <td>the percentage of children living in households with one parent</td>
-    </tr>
-    <tr>
-        <td>`Pct_Poverty`</td>
-        <td>the percentage of residents living in poverty</td>
-    </tr>
-    <tr>
-        <td>`Pct_Black`</td>
-        <td>the percentage of Black residents</td>
-    </tr>
-    <tr>
-        <td>`Pct_Age_lt_18`</td>
-        <td>the percentage of residents who are less than 18 years old</td>
-    </tr>
-    <tr>
-        <td>`Potential_Years_Lost`</td>
-        <td>the year of potential life lost before age 75 per 100k residents</td>
-    </tr>
-</table>
-&emsp;&emsp;Table 2. Description of Features Found from Backward Stepwise Feature Selection 
-
 
 ### Variable Transformations  
 After modeling our logged overdose rates against the features found from our backward selection, we plotted the residuals against each of the selected covariates. Figure 5 shows the residuals plots of the variables that we decided to transform ⎯ `Pct_Black`, `PrimCarePhys_per_100k`, and `Spatial_Mean`. We can see how the plots on the left-hand side are more skewed towards the right. However, after performing the log transformations, the observations are scattered more randomly about the horizontal line. We should also note that we added 1 to our `Pct_Black` variable before log transforming it since many of the observations were very close to zero. 
