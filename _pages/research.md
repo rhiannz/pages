@@ -142,12 +142,21 @@ Below is the optimized hyperparameter set found by our grid search algorithm.
 </pre>
 
 
+Using the Bottleneck distance metric, our model correctly matched typing data it had already seen to its corresponding test subject with 100% accuracy. However, when we introduced new typing data, its accuracy dropped down to about 10%.
+
 <pre>
 Bottleneck distance trainig accuracy	= 100.0%
 Bottleneck distance prediction accuracy	= 9.803921568627452%
 </pre>
 
     
+
+### Discussion and Future Work
+For Topological Data Analysis, our dataset was was on the small side, with only 50 data points per persistence diagram. It is likely that we would have achieved better results with more data points per diagram (400 and up). Also, since our machine learning experience is very limited, we may have been able to achieve better results by changing other paramaters.
+
+There are other tools in Topological Data Analysis besides the Bottleneck distance that could lead to better results. For example, below we use the Persistence Landscape, Persistence Image, Slicced Wasserstein Kernel, and Persistence Weighted Gaussian Kernel. With minimal tuning, we achieved close to 30% accuracy using the Persistence Image instead of the Bottleneck distance.
+
+
 <p style="color:gray;font-weight:200;font-size:13px;line-height:2"> 
     <font size="+1">References</font><br>
  &emsp; 1.  Title image created from Kolosov, K. (2022). Side view of faceless female typing on laptop sitting by table in evening in dark. Shutterstock. https://www.shutterstock.com/video/clip-22414081-side-view-faceless-female-typing-on-laptop
