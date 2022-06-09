@@ -70,4 +70,8 @@ This research project utilizes persistent homology to examine student typing dat
 <hr/>
 
 
+# Contact
+
+Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@gmail.com</span>
+
 
