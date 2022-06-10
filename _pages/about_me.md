@@ -17,15 +17,6 @@ author_profile: true
 
 Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@gmail.com</span>
 
-<form>
-  First name:<br>
-  <input type="text" name="name"><br>
-  Last name:<br>
-  <input type="text" name="email">
-  <input type="text" name="message">
-  <input type="submit" value="Submit">
-</form>
-
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf2rcIOe5JCeeVmf0dyA5T5paxStMnz-KR8zEhDdn7kQveIUA/formResponse?usp=pp_url" target="hidden_iframe" onsubmit="submitted=true;">
   Name:<br>
   <input type="text" name="entry.1617483516" id="entry.1617483516"><br>
@@ -34,18 +25,19 @@ Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@g
   Message:<br>
   <input type="text" name="entry.1487389352" id="entry.1487389352">
   <input type="submit" value="Submit">
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript">var submitted=false;</script>
+  <script type="text/javascript">
+  $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Your submission has been processed...');
+    });
+  </script>
 </form> 
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-<script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
+
 
 {% for post in site.about_me %}
   {% include archive-single.html %}
