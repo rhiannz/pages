@@ -26,19 +26,33 @@ Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@g
   Message:<br>
   <input type="text" name="entry.1487389352" id="entry.1487389352">
   <input type="submit" value="Submit">
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript">var submitted=false;</script>
-    <script type="text/javascript">
-    $('#gform').on('submit', function(e) {
-      $('#gform *').fadeOut(2000);
-      $('#gform').prepend('Your submission has been processed...');
-      });
-    </script>
 </form> 
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-
+function ajaxpost () {
+  // (A) GET FORM DATA
+  var form = document.getElementById("gform");
+  var data = new FormData(form);
+ 
+  // (B) AJAX REQUEST
+  // (B1) POST DATA TO SERVER, RETURN RESPONSE AS TEXT
+  fetch("1c-server.html", { method:"POST", body:data })
+  .then(res=>res.text())
+ 
+  // (B2) SHOW MESSAGE ON SERVER RESPONSE
+  .then((response) => {
+    console.log(response);
+    if (response == "OK") { alert("SUCCESSFUL!"); }
+    else { alert("FAILURE!"); }
+  })
+ 
+  // (B3) OPTIONAL - HANDLE FETCH ERROR
+  .catch((err) => { console.error(err); });
+ 
+  // (C) PREVENT FORM SUBMIT
+  return false;
+}
 
 {% for post in site.about_me %}
   {% include archive-single.html %}
