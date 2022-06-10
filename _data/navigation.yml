@@ -12,8 +12,6 @@ main:
   - title: "Research Experience"
     url: /research/ 
   
-  - title: "About"
-    url: /about_me/
- 
   - title: "Contact"
-    url: /talks/
+    url: /contact/
+
