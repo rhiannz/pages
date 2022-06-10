@@ -19,10 +19,8 @@ author_profile: true
 Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@gmail.com</span>
 
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf2rcIOe5JCeeVmf0dyA5T5paxStMnz-KR8zEhDdn7kQveIUA/formResponse?usp=pp_url" target="hidden_iframe" onsubmit="setTimeout(function(){window.location.reload();},10);">
-  Name:<br>
-  <input type="text" name="entry.1617483516" id="entry.1617483516"><br>
-  Email:<br>
-  <input type="text" name="entry.1417233657" id="entry.1417233657">
+  Name: &nbsp; <input type="text" name="entry.1617483516" id="entry.1617483516"><br>
+  Email: &emsp; <input type="text" name="entry.1417233657" id="entry.1417233657">
   Message:<br>
   <input type="text" name="entry.1487389352" id="entry.1487389352">
   <input type="submit" value="Submit">
