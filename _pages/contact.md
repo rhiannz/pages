@@ -10,9 +10,9 @@ author_profile: true
 <hr/>
 
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf2rcIOe5JCeeVmf0dyA5T5paxStMnz-KR8zEhDdn7kQveIUA/formResponse?usp=pp_url" target="hidden_iframe" onsubmit="setTimeout(function(){window.location.reload();},10);"> 
-  <input type="text" name="entry.1617483516" placeholder="Your name" id="entry.1617483516" style="font-size:12pt;height:16px">
+  <input type="text" name="entry.1617483516" placeholder="Your name" id="entry.1617483516" style="font-size:16pt;height:32px">
   &nbsp;<br><br> 
-  <input type="text" name="entry.1417233657" placeholder="Your email" id="entry.1417233657" style="font-size:12pt;height:16px">
+  <input type="text" name="entry.1417233657" placeholder="Your email" id="entry.1417233657" style="font-size:16pt;height:32px">
   &nbsp;<br><br>
   <textarea name="entry.1487389352" placeholder="Type your message here" id="entry.1487389352" rows="12" ></textarea>
   <input type="submit" value="Submit" style="color: white; background-color: cornflowerblue; border: 3pt solid cornflowerblue">
