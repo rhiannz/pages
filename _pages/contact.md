@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Contact"
-permalink: /about_me/
+permalink: /contact/
 author_profile: true
 ---
 
@@ -23,6 +23,6 @@ author_profile: true
 Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@gmail.com</span>
 
 
-{% for post in site.about_me %}
+{% for post in site.contact %}
   {% include archive-single.html %}
 {% endfor %}
