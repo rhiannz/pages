@@ -12,6 +12,21 @@ author_profile: true
 </p>
 
 <hr/>
+<!-- Sample HTML Form -->
+<form action="mailto:rhiannzhang@gmail.com"
+method="POST"
+enctype="multipart/form-data"
+name="EmailForm">
+    Name:<br>
+    <input type="text" size="19" name="Contact-Name"><br><br>
+    Email:<br>
+    <input type="email" name="Contact-Email"><br><br> 
+    Message:<br> 
+    <textarea name="Contact-Message" rows="6″ cols="20″>
+    </textarea><br><br> 
+    <button type="submit" value="Submit">Send</button>
+</form>  
+
 
 # Contact
 
