@@ -15,7 +15,7 @@ author_profile: true
   <input type="text" name="entry.1417233657" placeholder="Your email" id="entry.1417233657" style="font-size:15pt;height:40px">
   &nbsp;<br><br>
   <textarea name="entry.1487389352" placeholder="Type your message here" id="entry.1487389352" rows="12" style="font-size:15pt"></textarea>
-  <input type="submit" value="Submit" style="color: white; background-color: cornflowerblue; border: 3pt solid cornflowerblue">
+  <input type="submit" value="Submit" style="font-size: 15pt; color: white; background-color: cornflowerblue; border: 4pt solid cornflowerblue">
 </form> 
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
