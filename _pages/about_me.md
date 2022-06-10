@@ -23,7 +23,7 @@ Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@g
   Email: &emsp; <input type="text" name="entry.1417233657" id="entry.1417233657">
   Message:<br>
   <input type="text" name="entry.1487389352" id="entry.1487389352">
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" style="color: teal">
 </form> 
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
