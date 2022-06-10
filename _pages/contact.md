@@ -20,8 +20,7 @@ author_profile: true
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-<br><br>
-Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@gmail.com</span>
+<br>
 
 
 {% for post in site.contact %}
