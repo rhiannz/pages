@@ -14,7 +14,7 @@ author_profile: true
   &nbsp;<br><br> 
   <input type="text" name="entry.1417233657" placeholder="Your email" id="entry.1417233657">
   &nbsp;<br><br>
-  <textarea name="entry.1487389352" placeholder="Type your message here" id="entry.1487389352" rows="10" ></textarea><br><br>
+  <textarea name="entry.1487389352" placeholder="Type your message here" id="entry.1487389352" rows="10" ></textarea>
   <input type="submit" value="Submit" style="color: white; background-color: cornflowerblue; border: 3pt solid cornflowerblue">
 </form> 
 
