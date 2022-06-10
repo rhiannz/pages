@@ -12,20 +12,6 @@ author_profile: true
 </p>
 
 <hr/>
-<!-- Sample HTML Form -->
-<form action="mailto:rhiannzhang@gmail.com"
-method="POST"
-enctype="multipart/form-data"
-name="EmailForm">
-    Name:<br>
-    <input type="text" size="19" name="Contact-Name"><br><br>
-    Email:<br>
-    <input type="email" name="Contact-Email"><br><br> 
-    Message:<br> 
-    <textarea name="Contact-Message" rows="6″ cols="20″>
-    </textarea><br><br> 
-    <button type="submit" value="Submit">Send</button>
-</form>  
 
 
 # Contact
@@ -40,14 +26,14 @@ Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@g
   Message:<br>
   <input type="text" name="entry.1487389352" id="entry.1487389352">
   <input type="submit" value="Submit">
-  <script src="assets/js/jquery.min.js"></script>
-  <script type="text/javascript">var submitted=false;</script>
-  <script type="text/javascript">
-  $('#gform').on('submit', function(e) {
-    $('#gform *').fadeOut(2000);
-    $('#gform').prepend('Your submission has been processed...');
-    });
-  </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+      $('#gform *').fadeOut(2000);
+      $('#gform').prepend('Your submission has been processed...');
+      });
+    </script>
 </form> 
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
