@@ -22,7 +22,7 @@ Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@g
   Name: &nbsp; <input type="text" name="entry.1617483516" placeholder="Your Name" id="entry.1617483516"><br>
   Email: &emsp; <input type="text" name="entry.1417233657" id="entry.1417233657">
   Message:<br>
-  <textarea type="text" name="entry.1487389352" id="entry.1487389352"></textarea>
+  <textarea name="entry.1487389352" id="entry.1487389352"></textarea>
   <input type="submit" value="Submit" style="color: teal">
 </form> 
 
