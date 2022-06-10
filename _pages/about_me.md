@@ -18,7 +18,7 @@ author_profile: true
 
 Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@gmail.com</span>
 
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf2rcIOe5JCeeVmf0dyA5T5paxStMnz-KR8zEhDdn7kQveIUA/formResponse?usp=pp_url" target="hidden_iframe" onsubmit="return ajaxpost()">
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf2rcIOe5JCeeVmf0dyA5T5paxStMnz-KR8zEhDdn7kQveIUA/formResponse?usp=pp_url" target="hidden_iframe" onsubmit="setTimeout(function(){window.location.reload();},10);">
   Name:<br>
   <input type="text" name="entry.1617483516" id="entry.1617483516"><br>
   Email:<br>
@@ -29,30 +29,6 @@ Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@g
 </form> 
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-function ajaxpost () {
-  // (A) GET FORM DATA
-  var form = document.getElementById("gform");
-  var data = new FormData(form);
- 
-  // (B) AJAX REQUEST
-  // (B1) POST DATA TO SERVER, RETURN RESPONSE AS TEXT
-  fetch("1c-server.html", { method:"POST", body:data })
-  .then(res=>res.text())
- 
-  // (B2) SHOW MESSAGE ON SERVER RESPONSE
-  .then((response) => {
-    console.log(response);
-    if (response == "OK") { alert("SUCCESSFUL!"); }
-    else { alert("FAILURE!"); }
-  })
- 
-  // (B3) OPTIONAL - HANDLE FETCH ERROR
-  .catch((err) => { console.error(err); });
- 
-  // (C) PREVENT FORM SUBMIT
-  return false;
-}
 
 {% for post in site.about_me %}
   {% include archive-single.html %}
