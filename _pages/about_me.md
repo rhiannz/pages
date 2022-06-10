@@ -23,7 +23,7 @@ Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@g
   Email: <input type="text" name="entry.1417233657" placeholder="Your Email" id="entry.1417233657" >
   Message:<br>
   <textarea name="entry.1487389352" placeholder="Type your message here" id="entry.1487389352" rows="10" ></textarea>
-  <input type="submit" value="Submit" style="color: teal">
+  <input type="submit" value="Submit" style="color: white; background-color: cornflowerblue">
 </form> 
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
