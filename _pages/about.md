@@ -67,4 +67,9 @@ This research project utilizes persistent homology to examine student typing dat
 
 <a href="https://rhiannz.github.io//research/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
+<hr/>
+<br>
 
+# Contact
+
+Email: &nbsp; <span style = "font-family:'Courier New',monospace;">rhiannzhang@gmail.com</span>
