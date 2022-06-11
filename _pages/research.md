@@ -114,7 +114,7 @@ We also compare the barcode diagrams of our selected test subjects down below.
 <center><img src="/images/ph_barcodes1.png" width="700"/></center>
 <center><img src="/images/ph_barcodes2.png" width="700"/></center>
 
-In the persistence diagrams, we especially note the variations in the outliers and, in the barcode diagrams, we can see the slight disparities in which each subject’s barcode tapers off. While these diagrams allow us to easily observe the differences between typing patterns visually, we also utilized bottleneck distances to quantify these contrasts. Shown below are the bottleneck distances between each of our selected subjects in terms of the 0th, 1st, and 2nd homology. 
+We especially note the variations in the outliers between each subject persistence diagrams. We can also see the disparities in the way each barcode diagram tapers off. While these figures allow us to easily observe the differences between typing patterns visually, we also utilized bottleneck distances to quantify these contrasts. Shown below are the bottleneck distances between each of our selected subjects in terms of the 0th, 1st, and 2nd homology. 
 
 <center><img src="/images/ph_table0.png" width="300"/><img src="/images/ph_table1.png" width="300"/><img src="/images/ph_table2.png" width="300"/></center>
 
