@@ -41,7 +41,7 @@ The paper concerns the impact of Piso Firme, a program that provided resources f
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/"><img src='/images/ga_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
-In this project, we created an R package implementing genetic algorithms that efficiently selects the most optimized combination of covariates from multidimensional datasets for generalized linear modeling. We allow users to choose their own fitness functions and several different genetic operators, such as crossover and mutation. We also tested all of our functions using different datasets and criteria. Further details... 
+In this project, we created an R package implementing genetic algorithms that efficiently selects the most optimized combination of covariates from multidimensional datasets for generalized linear modeling. We allow users to choose their own fitness functions and several different genetic operators, such as crossover and mutation. We also tested all of our functions using different datasets and criteria. Further details of the package are shown...
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-4/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
