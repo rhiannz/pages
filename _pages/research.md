@@ -9,7 +9,7 @@ author_profile: true
 
 ![](/images/ph_cover.png)
 
-This research project utilizes persistent homology to examine student typing data collected from online proctoring sites and identify trends indicating academic misconduct. Topological data analysis is applied to evaluate the algebraic facets of the persistence of holes in a given space and display high dimensional data trends. 
+This research project utilizes persistent homology to examine student typing data collected from online proctoring sites and identify trends indicating academic misconduct. Topological data analysis is applied to evaluate the algebraic facets of the persistence of holes in a given space and display high-dimensional data trends. 
 
 The following report will explain the general background information behind Persistent Homology, the code used to study different typing patterns, and the results we found. 
 
@@ -45,7 +45,7 @@ As we move forward, it is important to note that *the nth homology is quantifyin
 Hence, with **1st Persistent Homology**, we still have balls growing simultaneously around the points, but now we are paying attention to the loops that form and disappear as the balls grow. 
 A *loop* is formed or *born* when the white space is enclosed around a ring of balls, as seen in the first figure below. 
 As the balls continue to grow, the white space decreases and eventually disappears, being completely filled in by the balls, which we call its *death* (seen in second figure). 
-However, as the balls grow, a larger loop is also born (seen in third figure) which  eventually dies as well. 
+However, as the balls grow, a larger loop is also born (seen in third figure) which eventually dies as well. 
 
 <center><img src="/images/ph_holes.png" width="700"/></center>
 <center><img src="/images/ph_1st.gif" width="700"/></center>
@@ -64,7 +64,7 @@ So, we introduce **simplices**.
 Starting with a *zero-dimensional simplex*, we have a point. 
 Next, an edge between two points is a *one-dimensional simplex*.
 A triangular face is a *two-dimensional simplex*.
-A solid tetrahedron is a *three-dimensional simples*. 
+A solid tetrahedron is a *three-dimensional simplex*. 
 And this pattern continues as we go higher in dimensions. 
 
 Moreover, if we put together simplices together in a way that the intersection between any two simplices is also a simplex, we obtain a **simplicial complex**, which you can see an example of below. Hence, simplicial complexes are built from points, lines, 
@@ -72,20 +72,20 @@ and triangular faces. Homology keeps track of the loops and voids present within
 
 <center><img src="/images/ph_simpcomp.png" width="150"/>&emsp;&emsp;&emsp;&emsp;&emsp;<img src="/images/ph_homology.png" width="280"/></center>
 
-Now, returning to our original point cloud and applying the simplices, we have this diagram which shows the simplicial complex changing as the balls grow. 
-The simplicial complex allows us to identify and quantify where the holes are computationally. 
+Now, returning to our original point cloud and applying the simplices, we have this diagram that shows the simplicial complex changing as the balls grow. 
+The simplicial complex allows us to identify and quantify where the holes are computational. 
 
 <center><img src="/images/ph_simpcompcloud.gif" width="450"/></center>
 
-However, we still need to determine the appropriate distance $d$ at which our simplicial complex contains siginficant features. As seen below, when $d$ is too small, we are only detecting noise and when we choose a $d$ that is too large, we end up with a giant simplex displaying a trivial homology. 
+However, we still need to determine the appropriate distance $d$ at which our simplicial complex contains significant features. As seen below, when $d$ is too small, we are only detecting noise and when we choose a $d$ that is too large, we end up with a giant simplex displaying a trivial homology. 
 
 <center><img src="/images/ph_choosingd.png" width="700"/></center>
 
-This is where the idea of *persistence* comes in. In particular, we are interesting in studying the birth time and death time of the holes and voids in our simplicial complexes. In the example below, we can see how the barcode on the graph is tracking the distances $d$ at which a loop is born, continuing while it is present, and ending upon the loop's death. 
+This is where the idea of *persistence* comes in. In particular, we are interested in studying the birth time and death time of the holes and voids in our simplicial complexes. In the example below, we can see how the barcode on the graph is tracking the distances $d$ at which a loop is born, continuing while it is present, and ending upon the loop's death. 
 
 <center><img src="/images/ph_birthdeath.png" width="450"/></center>
 
-Now, we can see how this applies to our original point cloud, as the general loop shape shows up in the barcode as the most persistence feature of our data while smaller loops are shown to be less significant and can be deemed as noise. 
+Now, we can see how this applies to our original point cloud, as the general loop shape shows up in the barcode as the most persistent feature of our data while smaller loops are shown to be less significant and can be deemed as noise. 
 
 <center><img src="/images/ph_barcodes.gif" width="600"/></center>
 
@@ -98,40 +98,31 @@ However, we are still able to carry out the computations because we can use Pers
 
 Now that we have covered the basics of persistent homology, we can use this method of topological data analysis to examine student typing data and investigate possible trends of academic misconduct. More specifically, we will be calculating persistence diagrams for all the test subjects in the study, and then identifying each subject using the bottleneck distance of their respective persistence diagrams. 
 
-Throughout this section, we will be using the [Keystroke Dynamics - Benchmark Data Set](https://www.cs.cmu.edu/~keystroke/) which contains a little over 20,000 rows. Each test subject has 8 typing sessions consisting of 50 repititions in which they retype passwords. The data details how long each key pressed down for as well as the time between the pressing of each key. 
+Throughout this section, we will be using the [Keystroke Dynamics - Benchmark Data Set](https://www.cs.cmu.edu/~keystroke/) which contains a little over 20,000 rows. Each test subject has 8 typing sessions consisting of 50 repetitions in which they retype passwords. The data details how long each key is pressed down and the time between the pressing of each key. 
 
-We began by preprocessing the data so that we can generate a persistence diagram for each typing session. To do this, we group the typing data by test subject and store it in a list. We also create list that contains the corresponding labels. In order to get better results, we shuffle the data before splitting each test subject's typing data and labels into the 8 sessions. We then created a persistence diagram for each typing session,  extracted the persistence intervals in the specified dimensions, and generated our training and testing data. 
+We began by preprocessing the data so that we can generate a persistence diagram for each typing session. To do this, we group the typing data by test subject and store it in a list. We also created a list that contains the corresponding labels. In order to get better results, we shuffle the data before splitting each test subject's typing data and labels into the 8 sessions. We then created a persistence diagram for each typing session,  extracted the persistence intervals in the specified dimensions, and generated our training and testing data to use in a k-nearest neighbors classifier. 
 
 Next, we created Vietoris-Rips complexes and their respective simplex trees for each subject's typing data, and then we calculate the persistence. Due to our hardware limitations, we only compute the first three homologies at a maximum edge length of 0.8.
 
-Now we plot the persistence diagrams of four selected test subjects which we have named for easy comparison. As you can see form the legend in the diagrams, the red dots represent the 0th homology, the blue dots represent the 1st homology, and the green dots represent the 2nd homology. 
+Now we plot the persistence diagrams of four selected test subjects which we have named for easy comparison. As you can see from the legend in the diagrams, the red dots represent the 0th homology, the blue dots represent the 1st homology, and the green dots represent the 2nd homology. 
 
 <center><img src="/images/ph_diagrams1.png" width="700"/></center>
 <center><img src="/images/ph_diagrams2.png" width="700"/></center>
 
-We can also compare the barcode diagrams of our selected test subjects down below. 
+We also compare the barcode diagrams of our selected test subjects down below. 
 
 <center><img src="/images/ph_barcodes1.png" width="700"/></center>
 <center><img src="/images/ph_barcodes2.png" width="700"/></center>
 
-We can see that . 
-
-
-We also compare the bottleneck distances between each of our selected subjects in terms of the 0th, 1st, and 2nd homology. 
+In the persistence diagrams, we especially note the variations in the outliers and, in the barcode diagrams, we can see the slight disparities in which each subject’s barcode tapers off. While these diagrams allow us to easily observe the differences between typing patterns visually, we also utilized bottleneck distances to quantify these contrasts. Shown below are the bottleneck distances between each of our selected subjects in terms of the 0th, 1st, and 2nd homology. 
 
 <center><img src="/images/ph_table0.png" width="300"/><img src="/images/ph_table1.png" width="300"/><img src="/images/ph_table2.png" width="300"/></center>
 
-Across all different homologies, each subject has the smallest bottleneck distances with themselves by far. These bottleneck distances also span a small range as well. This indicates that there are significant and detectable differences between each of the individual test subjects typing patterns. 
+Across all different homologies, each subject has the smallest bottleneck distances with themselves by far. These bottleneck distances also span a small range as well. These are all indications that the slight differences displayed in the diagrams above are significant and detectable. 
 
+## Results and Discussion of Future Work 
 
-
-
-Below are the first four diagrams for subject `s002`. While they vary quite a bit, we should note that the first and fourth diagrams are quite similar.
-
-Next, we optimize our hyperparameters using a grid search algorithm and train our model using the Bottleneck distance metric. First, we only keep the finite from our persistence intervals using the DiagramSelector. Then we vary the epsilon (which here represents the absolute error tolerated on the distance), n_neighbors (which represents the number of neighbors our K Nearest Neighbors Classifier uses), weights (which represent the how the nearest neighbors are weighted), and p (which represents the power for the Minkowski metric, 1 for Manhattan distance and 2 for Euclidean distance).
-
-
-Below is the optimized hyperparameter set found by our grid search algorithm.
+We continued on by using bottleneck distance as our metric and implementing a grid search algorithm to optimize our hyperparameters. Note that we only kept the finite from our persistence intervals using the `DiagramSelector`. We then varied the `epsilon` (which represents the absolute error tolerated on the distance), `n_neighbors` (which represents the number of neighbors our k-nearest neighbors classifier uses), `weights` (which represent the how the nearest neighbors are weighted), and `p` (which represents the power for the Minkowski metric, 1 for Manhattan distance and 2 for Euclidean distance). Below is the optimized hyperparameter set found by our grid search algorithm.
 
 <pre>
  'Estimator__n_neighbors': 3,
@@ -141,20 +132,15 @@ Below is the optimized hyperparameter set found by our grid search algorithm.
  'TDA__epsilon': 0.001
 </pre>
 
-
-Using the Bottleneck distance metric, our model correctly matched typing data it had already seen to its corresponding test subject with 100% accuracy. However, when we introduced new typing data, its accuracy dropped down to about 10%.
+Our best model was able to correctly match the typing data in the training set to its corresponding test subject with 100% accuracy. However, the algorithm fails to generalize to cases outside of the training set, with accuracy dropped down to about 10%. We then considered Persistance Image as another possible metric and were able to increase our predication accuracy significantly with minimal tuning. 
 
 <pre>
-Bottleneck distance trainig accuracy	= 100.0%
+Bottleneck distance training accuracy	= 100.0%
 Bottleneck distance prediction accuracy	= 9.803921568627452%
+Persistence Image prediction accuracy 	= 28.431372549019606%
 </pre>
 
-    
-
-### Discussion and Future Work
-For Topological Data Analysis, our dataset was was on the small side, with only 50 data points per persistence diagram. It is likely that we would have achieved better results with more data points per diagram (400 and up). Also, since our machine learning experience is very limited, we may have been able to achieve better results by changing other paramaters.
-
-There are other tools in Topological Data Analysis besides the Bottleneck distance that could lead to better results. For example, below we use the Persistence Landscape, Persistence Image, Slicced Wasserstein Kernel, and Persistence Weighted Gaussian Kernel. With minimal tuning, we achieved close to 30% accuracy using the Persistence Image instead of the Bottleneck distance.
+With only 50 data points per persistence diagram, our dataset was on the smaller side in terms of topological data analysis. It is likely that we would have been able to achieve better results with more data points per diagram. In our future research, we also hope to explore other tools in topological data analysis that could lead to greater results, such as the Persistence Landscape, Sliced Wasserstein Kernel, and Persistence Weighted Gaussian Kernel. 
 
 
 <p style="color:gray;font-weight:200;font-size:13px;line-height:2"> 
@@ -173,3 +159,4 @@ There are other tools in Topological Data Analysis besides the Bottleneck distan
 {% for post in site.research %}
   {% include archive-single.html %}
 {% endfor %}
+
