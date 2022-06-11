@@ -9,8 +9,8 @@ collection: portfolio
 This project replicates and interprets the results of the Matias D. Cattaneo, Sebastian Galiani, Paul J. Gertler, Sebastian Martinez, and Rocio Titunik’s (2009) “[Housing, Health, and Happiness](https://www.aeaweb.org/articles?id=10.1257/pol.1.1.75)” study. 
 
 
-## I &nbsp; Summary
-&emsp;&nbsp; The paper concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on the families’ health and welfare due to the administration of Piso Firme. 
+## I &nbsp; Abtract
+&emsp;&nbsp; The "Housing, Health, and Happiness" study concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on the families’ health and welfare due to the administration of Piso Firme. 
 
 &emsp;&nbsp; The study found that Piso Firme not only significantly decreased the prevalence of parasitic infestations, anemia, and diarrhea in young children but also improved their cognitive development as well. In addition, the study also discovered that the adults of the household also experience a substantial improvement in mental health and quality of life. 
 
