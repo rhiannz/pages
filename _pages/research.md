@@ -125,19 +125,19 @@ Across all different homologies, each subject has the smallest bottleneck distan
 We continued on by using bottleneck distance as our metric and implementing a grid search algorithm to optimize our hyperparameters. Note that we only kept the finite from our persistence intervals using the `DiagramSelector`. We then varied the `epsilon` (which represents the absolute error tolerated on the distance), `n_neighbors` (which represents the number of neighbors our k-nearest neighbors classifier uses), `weights` (which represent the how the nearest neighbors are weighted), and `p` (which represents the power for the Minkowski metric, 1 for Manhattan distance and 2 for Euclidean distance). Below is the optimized hyperparameter set found by our grid search algorithm.
 
 <pre>
- 'Estimator__n_neighbors': 3,
- 'Estimator__p': 1,
- 'Estimator__weights': 'distance',
- 'Scaler__use': False,
- 'TDA__epsilon': 0.001
+  'Estimator__n_neighbors': 3,
+  'Estimator__p': 1,
+  'Estimator__weights': 'distance',
+  'Scaler__use': False,
+  'TDA__epsilon': 0.001
 </pre>
 
 Our best model was able to correctly match the typing data in the training set to its corresponding test subject with 100% accuracy. However, the algorithm fails to generalize to cases outside of the training set, with accuracy dropped down to about 10%. We then considered Persistance Image as another possible metric and were able to increase our predication accuracy significantly with minimal tuning. 
 
 <pre>
-Bottleneck distance training accuracy	= 100.0%
-Bottleneck distance prediction accuracy	= 9.803921568627452%
-Persistence Image prediction accuracy 	= 28.431372549019606%
+  Bottleneck distance training accuracy	= 100.0%
+  Bottleneck distance prediction accuracy	= 9.803921568627452%
+  Persistence Image prediction accuracy 	= 28.431372549019606%
 </pre>
 
 With only 50 data points per persistence diagram, our dataset was on the smaller side in terms of topological data analysis. It is likely that we would have been able to achieve better results with more data points per diagram. In our future research, we also hope to explore other tools in topological data analysis that could lead to greater results, such as the Persistence Landscape, Sliced Wasserstein Kernel, and Persistence Weighted Gaussian Kernel. 
