@@ -14,4 +14,4 @@ redirect_from:
 <embed src='/images/Resume.pdf' width="350" height="420">
 
 
-<iframe id="pdf-js-viewer" src='/images/Resume.pdf#&navContentPaneEnabled=false'  title="webviewer" frameborder="0" width="800" height="1000"></iframe>
+<iframe id="pdf-js-viewer" src='/images/Resume.pdf#&navContentPaneEnabled=false'  title="webviewer" frameborder="0" width="1200" height="1400"></iframe>
