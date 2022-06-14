@@ -9,9 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src='/images/Resume.pdf#&toolbar=0' width="350" height="420">
+<embed src='/images/Resume.pdf#&navContentPaneEnabled=false' width="350" height="420">
 
 <embed src='/images/Resume.pdf' width="350" height="420">
 
 
-<iframe id="pdf-js-viewer" src='/images/Resume.pdf'  title="webviewer" frameborder="0" width="800" height="1000"></iframe>
+<iframe id="pdf-js-viewer" src='/images/Resume.pdf#&navContentPaneEnabled=false'  title="webviewer" frameborder="0" width="800" height="1000"></iframe>
