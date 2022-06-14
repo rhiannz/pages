@@ -11,11 +11,8 @@ redirect_from:
 
 <embed src='/images/Resume.pdf#&toolbar=0' width="350" height="420">
 
+<iframe id="pdf-js-viewer" src="/web/viewer.html?file=%2assets%2pdf%2FResume.pdf" title="webviewer" frameborder="0" width="500" height="600"></iframe>
 
-<embed src='/images/Resume.pdf' width="350" height="420" type="application/pdf" style="margin:0px;padding:0px;overflow:hidden;display:block;">
+<iframe id="pdf-js-viewer" src='/images/Resume.pdf'  title="webviewer" frameborder="0" width="500" height="600"></iframe>
 
-<embed src='/images/Resume.pdf' width="350" height="420" type="application/pdf" style="overflow:hidden;display:block;">
-
-<embed src='/images/Resume.pdf' width="350" height="420" type="application/pdf" style="display:block">
-
-<embed src='/images/Resume.pdf' width="350" height="420" type="application/pdf" style="overflow:hidden">
+<iframe id="pdf-js-viewer" src="/web/viewer.html?file=%2assets%2pdf%2FResume.pdf" title="webviewer" frameborder="0" width="500" height="600"></iframe>
