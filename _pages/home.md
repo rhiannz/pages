@@ -4,6 +4,12 @@ title: "Home"
 permalink: /home/
 author_profile: true
 ---
+<p style="font-size: 23px">
+  Hello! As a recent graduate of the UC Berkeley MA Statistics program, I am trained in modern statistical and machine learning methods and have an undergraduate background in mathematics. I also have experience with languages and software such as Python, R, and SQL. Feel free to check out some of the things I have worked on : )
+</p>
+
+<hr/>
+<br>
 
 # Projects 
 
