@@ -8,12 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-<p style="font-size: 23px">
-  Hello! I am actively looking for a full-time job in a data-oriented role. As a recent graduate of the UC Berkeley MA Statistics program, I am trained in modern statistical and machine learning methods and have an undergraduate background in mathematics. I also have experience with languages and software such as Python, R, and SQL. I look forward to any opportunities to grow and contribute to others! Feel free to check out some of the things I have worked on : )
-</p>
-
-<hr/>
-<br>
 
 # Projects 
 
