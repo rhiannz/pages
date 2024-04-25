@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Research in Persistent Homology"
+title: "Persistent Homology in Keystroke Recognition"
 permalink: /research/
 author_profile: true
 ---
