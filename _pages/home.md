@@ -33,7 +33,7 @@ Every year, millions of students take AP Exams in over 30 different subjects. Th
 
 <hr/>
 
-<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 42px; color: black; text-decoration: none;">Replication of the “Piso Firme” Program Impact Investigation</a>
+<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 38px; color: black; text-decoration: none;">Replication of the “Piso Firme” Program \nImpact Investigation</a>
 
 <a href="https://rhiannz.github.io//portfolio/portfolio-3/"><img src='/images/hhh_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
@@ -55,7 +55,7 @@ In this project, we created an R package implementing genetic algorithms that ef
 
 # Research Experience 
 
-<a href="https://rhiannz.github.io//research/" style="font-size: 43px; color: black; text-decoration: none;">Persistent Homology in Keystroke Recognition</a>
+<a href="https://rhiannz.github.io//research/" style="font-size: 41px; color: black; text-decoration: none;">Persistent Homology in Keystroke Recognition</a>
 
 <a href="https://rhiannz.github.io//research/"><img src='/images/ph_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
