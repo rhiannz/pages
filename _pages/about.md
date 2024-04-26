@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<p style="font-size: 20px">
+<p style="font-size: 19px">
   Hi there! For the past few years, I've been working as a Data Analyst immersed in the world of e-commerce, crafting custom dashboards and reporting to provide clear insights into crucial metrics. It's been an exciting journey learning about the inner workings of business operations, collaborating closely with marketing, merchandising, and finance teams, and applying my technical skills in SQL, Python, and Tableau to drive meaningful outcomes. As a graduate of the UC Berkeley MA Statistics program with an undergraduate background in mathematics, I’m well-equipped to tackle data challenges head-on. Feel free to take a look at some of the things I’ve worked in the past! : )
 </p>
 
