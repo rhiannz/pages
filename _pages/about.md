@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<p style="font-size: 23px">
+<p style="font-size: 20px">
   Hi there! For the past few years, I've been working as a Data Analyst immersed in the world of e-commerce, crafting custom dashboards and reporting to provide clear insights into crucial metrics. It's been an exciting journey learning about the inner workings of business operations, collaborating closely with marketing, merchandising, and finance teams, and applying my technical skills in SQL, Python, and Tableau to drive meaningful outcomes. As a graduate of the UC Berkeley MA Statistics program with an undergraduate background in mathematics, I’m well-equipped to tackle data challenges head-on. Feel free to take a look at some of the things I’ve worked in the past! : )
 </p>
 
@@ -58,7 +58,7 @@ In this project, we created an R package implementing genetic algorithms that ef
 
 # Research Experience 
 
-<a href="https://rhiannz.github.io//research/" style="font-size: 43px; color: black; text-decoration: none;">Persistent Homology in Keystroke Recognition</a>
+<a href="https://rhiannz.github.io//research/" style="font-size: 44px; color: black; text-decoration: none;">Persistent Homology in Keystroke Recognition</a>
 
 <a href="https://rhiannz.github.io//research/"><img src='/images/ph_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
 
