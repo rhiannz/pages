@@ -23,6 +23,16 @@ Throughout the years, there has been a dramatic increase in drug overdoses. We a
 
 <hr/>
 
+<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 40px; color: black; text-decoration: none;">Impact Evaluation of Cement Flooring Welfare Program</a>
+
+<a href="https://rhiannz.github.io//portfolio/portfolio-3/"><img src='/images/hhh_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
+
+The project concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on...
+
+<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
+
+<hr/>
+
 <a href="https://rhiannz.github.io/AP-Participation/" style="font-size: 39px; color: black; text-decoration: none;">An Analysis of AP Exam Participation Rates</a>
 
 <a href="https://rhiannz.github.io/AP-Participation/"><img src='/images/ap_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
@@ -30,16 +40,6 @@ Throughout the years, there has been a dramatic increase in drug overdoses. We a
 Every year, millions of students take AP Exams in over 30 different subjects. These rigorous tests grant high school students the opportunity to earn early college credits if they receive a score of 3 or higher. And when they reach college, these early credits allow students to skip introductory classes, free up their class schedules, and ...
 
 <a href="https://rhiannz.github.io/AP-Participation/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
-
-<hr/>
-
-<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="font-size: 40px; color: black; text-decoration: none;">Replication of the “Piso Firme” Program Impact Investigation</a>
-
-<a href="https://rhiannz.github.io//portfolio/portfolio-3/"><img src='/images/hhh_cover.png' alt="HTML tutorial" style="width:700px;height:auto;"></a>
-
-The paper concerns the impact of Piso Firme, a program that provided resources for low-income families in the State of Coahuila, Mexico to replace the dirt floors in their homes with cement floors. This study primarily focuses on quantifying the changes in parasitic infestations in young children, maternal happiness, and the subsequent long-term effects on...
-
-<a href="https://rhiannz.github.io//portfolio/portfolio-3/" style="text-decoration: none; background-color:cornflowerblue;" class="btn">See more</a>
 
 <hr/>
 
